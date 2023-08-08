@@ -1,4 +1,4 @@
-Example of ($ and Input) variables
+# Example of ($ and Input) variables
 
 touch test.sh
 
@@ -15,10 +15,10 @@ echo $CLASS
 
 
 
-Change input vlaues to string with <$*>
+# Change input vlaues to string with <$*>
 
-Change input Values to string with <$@>
+# Change input Values to string with <$@>
 
-Exit Code with $?
+# Exit Code with $?
 
 
