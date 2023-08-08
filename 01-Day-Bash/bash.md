@@ -16,10 +16,10 @@ echo $CLASS
 
 
 
-## Change input vlaues to string with _**<$*>**_
+**Change input vlaues to string with _**<$*>**_**
 
-## Change input Values to string with _**<$@>**_
+**Change input Values to string with _**<$@>**_**
 
-## Exit Code with _**$?**_
+**Exit Code with _**$?**_**
 
 
