@@ -1,11 +1,15 @@
-# Example of ($ and Input) variables
+# Bahs Script
+
+**Example of ($ and Input) variables** 
 
 > touch test.sh
 
 
-> #!/usr/bin/bash
-> CLASS="Hello DevOps!"
-> echo $CLASS
+#!/usr/bin/bash
+
+CLASS="Hello DevOps!"
+
+echo $CLASS
 
 
 
@@ -15,10 +19,11 @@
 
 
 
-# Change input vlaues to string with <$*>
 
-# Change input Values to string with <$@>
+## Change input vlaues to string with _**<$*>**_
 
-# Exit Code with $?
+## Change input Values to string with _**<$@>**_
+
+## Exit Code with _**$?**_
 
 
