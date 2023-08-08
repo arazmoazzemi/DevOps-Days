@@ -1,4 +1,4 @@
-## Example of ($ and Input) variables
+# Example of ($ and Input) variables
 
 > touch test.sh
 
