@@ -2,17 +2,13 @@
 
 **Example of ($ and Input) variables** 
 
-> touch test.sh
+`touch test.sh`
 
-
+```bash
 #!/usr/bin/bash
-
 CLASS="Hello DevOps!"
-
 echo $CLASS
-
-
-
+```
 
 
 
