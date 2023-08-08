@@ -1,11 +1,11 @@
-# Example of ($ and Input) variables
+## Example of ($ and Input) variables
 
-touch test.sh
+> touch test.sh
 
 
-#!/usr/bin/bash
-CLASS="Hello DevOps!"
-echo $CLASS
+> #!/usr/bin/bash
+> CLASS="Hello DevOps!"
+> echo $CLASS
 
 
 
