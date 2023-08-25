@@ -35,7 +35,7 @@ Git
 
 Add -----> commit
 
-
+Ctrl + `
 
 
 
