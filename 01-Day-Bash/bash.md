@@ -1,6 +1,6 @@
 # Bahs Script
 
-**Example of ($ and Input) variables** 
+__Example of ($ and Input) variables__
 
 `touch test.sh`
 
