@@ -1,5 +1,7 @@
 # Git
 
+* After install git
+
 
 
 
