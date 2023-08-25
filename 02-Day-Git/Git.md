@@ -14,6 +14,7 @@ GUI
 gitkraken
 
 mkdir test-project
+ls
 
 
 
