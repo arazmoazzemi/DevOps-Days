@@ -28,7 +28,9 @@ hi my firs line
 git init
 
 
-working directory, Staging Area, Git Repository
+Git
+
+{working directory, Staging Area, Git Repository}
 
 
 
