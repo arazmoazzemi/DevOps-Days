@@ -35,6 +35,9 @@ Git
 
 Add -----> commit
 
+
+vscode
+
 Ctrl + `
 
 
