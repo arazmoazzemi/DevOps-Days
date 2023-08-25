@@ -40,7 +40,7 @@ vscode
 
 Ctrl + `
 
-
+git add file1.txt
 
 
 
