@@ -30,7 +30,10 @@ git init
 
 Git
 
-{working directory, Staging Area, Git Repository}
+{01-working directory, 02-Staging Area, 03-Git Repository}
+
+
+
 
 
 
