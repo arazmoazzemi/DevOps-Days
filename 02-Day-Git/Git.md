@@ -28,7 +28,7 @@ hi my firs line
 git init
 
 
-working directory
+working directory, Staging Area, 
 
 
 
