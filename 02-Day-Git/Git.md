@@ -45,6 +45,7 @@ git add file1.txt
 
 02-staging to repository
 
+git commit -m ""
 
 
 
