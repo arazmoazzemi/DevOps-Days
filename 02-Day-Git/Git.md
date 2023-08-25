@@ -18,6 +18,7 @@ ls
 
 cd test-project
 
+code .
 
 
 
