@@ -2,6 +2,9 @@
 
 * After install git
 
+```bash
+git --version
+```
 
 
 
