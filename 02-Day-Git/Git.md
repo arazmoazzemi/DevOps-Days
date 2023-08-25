@@ -40,8 +40,10 @@ vscode
 
 Ctrl + `
 
+01- working directory to staging 
 git add file1.txt
 
+02-staging to repository
 
 
 
