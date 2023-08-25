@@ -16,6 +16,7 @@ gitkraken
 mkdir test-project
 ls
 
+cd test-project
 
 
 
