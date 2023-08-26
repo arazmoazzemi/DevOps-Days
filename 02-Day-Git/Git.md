@@ -22,6 +22,7 @@ cd test-project
 
 code .
 
+
 file1.txt
 
 hi my firs line
