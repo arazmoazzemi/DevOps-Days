@@ -38,7 +38,7 @@ git init
 Add -----> commit
 
 
-vscode
+* vscode
 
 Ctrl + `
 
