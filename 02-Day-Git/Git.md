@@ -6,7 +6,7 @@
 git --version
 ```
 
-# GUI
+# GUI Link
 
 #### https://git-scm.com/downloads/guis
 
