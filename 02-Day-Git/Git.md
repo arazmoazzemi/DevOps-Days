@@ -30,7 +30,7 @@ hi my firs line
 git init
 
 
-Git
+# Git
 
 {01-working directory, 02-Staging Area, 03-Git Repository}
 
