@@ -1,0 +1,64 @@
+apt-get update && apt-get upgrade -y
+
+sudo snap install --channel=3.3 maas
+
+sudo systemctl disable --now systemd-timesyncd
+
+
+sudo apt install -y postgresql
+
+Note! you will face a problem. if you want to use '@' sign for create db password:
+
+```bash
+
+$MAAS_DBUSER = maasuser
+$MAAS_DBPASS = 123456
+$MAAS_DBNAME = maasdb
+$HOSTNAME = localhost
+
+```
+
+sudo -i -u postgres psql -c "CREATE USER \"maasuser\" WITH ENCRYPTED PASSWORD '123456'"
+sudo -i -u postgres createdb -O "maasuser" "maasdb"
+
+sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Create PostgreSQL user:
+sudo -i -u postgres psql -c "CREATE USER \"$MAAS_DBUSER\" WITH ENCRYPTED PASSWORD '$MAAS_DBPASS'"
+
+
+
+Create the MAAS database:
+
+sudo -i -u postgres createdb -O "$MAAS_DBUSER" "$MAAS_DBNAME"
+
+
+sudo maas init region+rack --database-uri "postgres://$MAAS_DBUSER:$MAAS_DBPASS@$HOSTNAME/$MAAS_DBNAME"
+
+---------------------------------------------------------------------------------------------------
+
+sudo maas status
+
+
+sudo maas createadmin
+
+
+# sudo maas init region
+
+#sudo maas configauth
+
+#sudo maas createadmin
+
+#sudo maas config-tls enable
+
+
+
+
+
+
+
+
