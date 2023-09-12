@@ -1,4 +1,4 @@
-  Example for zabbix-6.4.6 installation:
+  Example for zabbix-6.4.6 **kvm** installation:
 
 ```bash
 virt-install \
