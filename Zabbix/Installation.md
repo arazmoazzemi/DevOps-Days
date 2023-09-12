@@ -22,7 +22,7 @@ nano /etc/sysconfig/network-scripts/ifcfg-eth0
 TYPE=Ethernet
 NAME=eth0
 BOOTPROTO=none
-IPADDR="192.168.122.88"
+IPADDR="192.168.122.85"
 NETMASK="255.255.255.0"
 GATEWAY=192.168.122.1
 DNS1=8.8.8.8
@@ -34,3 +34,7 @@ PEERDNS=no
 
 systemctl restart network
 ```
+
+
+
+
