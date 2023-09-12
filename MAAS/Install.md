@@ -6,6 +6,8 @@ sudo snap install --channel=3.3 maas
 sudo systemctl disable --now systemd-timesyncd
 ```
 
+
+```bash
 sudo apt install -y postgresql
 
 Note! you will face a problem. if you want to use '@' sign for create db password:
@@ -22,8 +24,10 @@ $HOSTNAME = localhost
 sudo -i -u postgres psql -c "CREATE USER \"maasuser\" WITH ENCRYPTED PASSWORD '123456'"
 sudo -i -u postgres createdb -O "maasuser" "maasdb"
 
-sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
 
+
+sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
+```
 
 --------------------------------------------------------------------------------------------------
 
