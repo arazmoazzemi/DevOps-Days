@@ -1,4 +1,4 @@
-## Install Bare Metal As A Service(MASS):
+## Install Bare Metal As A Service(MASS3.3):
 
 ```bash
 apt-get update && apt-get upgrade -y
