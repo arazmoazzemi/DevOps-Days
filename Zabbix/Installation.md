@@ -17,6 +17,7 @@ virt-install \
 Set static ip address
 
 ```bash
+yum install nano
 nano /etc/sysconfig/network-scripts/ifcfg-eth0
 
 TYPE=Ethernet
