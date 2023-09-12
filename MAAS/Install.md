@@ -1,3 +1,5 @@
+## Install Bare Metal As A Service(MASS):
+
 apt-get update && apt-get upgrade -y
 
 sudo snap install --channel=3.3 maas
