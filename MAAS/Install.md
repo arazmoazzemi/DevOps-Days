@@ -1,11 +1,10 @@
 ## Install Bare Metal As A Service(MASS):
 
+```bash
 apt-get update && apt-get upgrade -y
-
 sudo snap install --channel=3.3 maas
-
 sudo systemctl disable --now systemd-timesyncd
-
+```
 
 sudo apt install -y postgresql
 
