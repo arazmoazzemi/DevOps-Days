@@ -14,7 +14,8 @@ virt-install \
 ```
 ----
 
-Set static ip address
+Set static ip address:
+
 ___use vi or nano for edit network interfave___
 
 ```bash
