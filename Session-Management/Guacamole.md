@@ -56,7 +56,7 @@ wget https://github.com/Zer0CoolX/guacamole-customize-loginscreen-extension/raw/
 
 
 
----------------open port----------disable firewall-----------------------
+open portdisable firewall and openport
 sudo which nft >/dev/null && echo nftables is enabled in this system || echo ufw is enabled in this system
 
 # To stop nftables from doing anything, just drop all the rules:
