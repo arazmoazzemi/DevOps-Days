@@ -6,7 +6,6 @@
 
 ----
 
-
 1️⃣ Installation with bitnami image for kvm host:
 
 [Bitnami image download](https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova)
@@ -21,16 +20,14 @@ convert images
 
 ----
 
-Bitnami enable ssh
-
+Bitnami enable ssh, for this image:
+```bash
 ssh-keygen -t rsa -b 2048
 
 Debian
 sudo rm -f /etc/ssh/sshd_not_to_be_run
 sudo systemctl enable ssh
 sudo systemctl start ssh
-
-
 
 Ubuntu
 sudo mv /etc/init/ssh.conf.back /etc/init/ssh.conf
@@ -47,6 +44,8 @@ sudo systemctl disable ssh
 Ubuntu
 sudo stop ssh
 sudo mv /etc/init/ssh.conf /etc/init/ssh.conf.back
+```
+
 
 wget https://github.com/Zer0CoolX/guacamole-customize-loginscreen-extension/raw/master/branding.jar 
 /opt/bitnami/guacamole/extensions/
