@@ -5,7 +5,7 @@
 [Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)
 
 
-- 1️⃣ Installation with bitnami image for kvm host:
+1️⃣ Installation with bitnami image for kvm host:
 
 [Bitnami image download](https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova)
 
@@ -17,7 +17,7 @@
 
 
 
-------------------------enable ssh--------------------------------------
+Bitnami enable ssh
 
 ssh-keygen -t rsa -b 2048
 
