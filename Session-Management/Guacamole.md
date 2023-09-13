@@ -1,14 +1,14 @@
  # Apache Guacamole manual:
  ----
-- [Site](https://guacamole.apache.org/)
+- ___[Site](https://guacamole.apache.org/)___
 :
-- [Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)
+- ___[Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)___
 
 ----
 
-- 1️⃣ Installation with bitnami image for kvm host:
+- 1️⃣ **Installation with bitnami image for kvm host:**
 
-- [Bitnami image download](https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova)
+- ___[Bitnami image download](https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova)___
 
 ----
 
