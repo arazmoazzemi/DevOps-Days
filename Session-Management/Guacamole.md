@@ -64,6 +64,8 @@ https://guacamole.apache.org/doc/gug/guacamole-docker.html
 
 
 
+Proxying Guacamole
+
 
 
 
