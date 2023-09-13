@@ -11,7 +11,9 @@
 
 Upload downloaded image on your kvm host, decompress downloaded file, and you will convert vmware vmdk file to qemu image, for example:
 ```
-
+wget https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova
+tar -xvf /bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova
+qemu-img convert -O qcow2 bitnami-guacamole-1.5.3-r0-debian-11-amd64.vmdk guacamole-1.5.3.qcow2
 
 ```
 
