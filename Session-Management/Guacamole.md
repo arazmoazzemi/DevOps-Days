@@ -20,7 +20,7 @@ convert images
 
 ----
 
-Bitnami enable ssh, for this image:
+- Bitnami enable ssh, for this image:
 ```bash
 ssh-keygen -t rsa -b 2048
 
