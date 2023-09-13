@@ -1,4 +1,4 @@
- # Apache Guacamole manual:
+ # Apache Guacamole manual-1.5.3:
  ----
 - ___[Site](https://guacamole.apache.org/)___
 - ___[Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)___
