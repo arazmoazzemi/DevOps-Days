@@ -1,6 +1,6 @@
  # Apache Guacamole manual:
  
-[Site](https://guacamole.apache.org/)
+- [Site](https://guacamole.apache.org/)
 :
 [Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)
 
