@@ -48,6 +48,10 @@ sudo mv /etc/init/ssh.conf /etc/init/ssh.conf.back
 wget https://github.com/Zer0CoolX/guacamole-customize-loginscreen-extension/raw/master/branding.jar 
 /opt/bitnami/guacamole/extensions/
 
+----
+
+
+
 
 ---------------open port----------disable firewall-----------------------
 sudo which nft >/dev/null && echo nftables is enabled in this system || echo ufw is enabled in this system
