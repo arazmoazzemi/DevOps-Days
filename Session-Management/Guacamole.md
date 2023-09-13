@@ -58,3 +58,23 @@ systemctl mask nftables.service
 aptitude purge nftables
 
 
+Docker Installation:
+
+https://guacamole.apache.org/doc/gug/guacamole-docker.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
