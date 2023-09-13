@@ -68,7 +68,7 @@ systemctl mask nftables.service
 # To uninstall it and purge any traces of nftables in your system:
 aptitude purge nftables
 
-
+----
 Docker Installation:
 
 https://guacamole.apache.org/doc/gug/guacamole-docker.html
