@@ -4,6 +4,7 @@
 :
 [Introduction](https://guacamole.apache.org/doc/gug/introduction.html#what-is-guacamole)
 
+----
 
 1️⃣ Installation with bitnami image for kvm host:
 
