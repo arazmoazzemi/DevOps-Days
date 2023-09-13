@@ -10,8 +10,11 @@
 
 - ___[Bitnami image download](https://bitnami.com/redirect/to/2348922/bitnami-guacamole-1.5.3-r0-debian-11-amd64.ova)___
 
-Uload downloaded image on your kvm host and decompress file, for example:
+Upload downloaded image on your kvm host, decompress downloaded file, and you will convert vmware vmdk file to qemu image, for example:
+```
 
+
+```
 
 
 convert images
