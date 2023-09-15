@@ -47,6 +47,8 @@ sudo systemctl disable ssh
 Ubuntu
 sudo stop ssh
 sudo mv /etc/init/ssh.conf /etc/init/ssh.conf.back
+
+sudo systemctl restart ssh
 ```
 
 
