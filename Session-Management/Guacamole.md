@@ -61,7 +61,7 @@ sudo touch /etc/systemd/network/25-wired.network
 sudo nano /etc/systemd/network/25-wired.network
 
 [Match]
-Name={INTERFACE-NAME}  ---> use altname {enp0s3}
+Name={INTERFACE-NAME} 
 
 [Network]
 Address={HOST-IP-ADDRESS}
