@@ -65,12 +65,12 @@ docker ps
 docker ps -a
 ```
 
-# stop container
-
+- stop container
+bash```
 docker stop {CONTAINER ID} or {NAMES}
 docker stop ac6c83fcfd73
 docker stop zealous_bardeen
-
+```
 # Start container
 
 docker start {CONTAINER ID} or {NAMES}
