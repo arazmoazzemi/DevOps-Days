@@ -53,9 +53,11 @@ docker login -u arazcode -p danial123
 docker pull nginx
 ```
 
-# Run container
+- Run container
+```bash
 deattach and run in background
 docker run -d nginx
+```
 
 # show docker images
 docker ps
