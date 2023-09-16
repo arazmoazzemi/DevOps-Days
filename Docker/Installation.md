@@ -59,9 +59,11 @@ deattach and run in background
 docker run -d nginx
 ```
 
-# show docker images
+- show docker images
+```bash
 docker ps
 docker ps -a
+```
 
 # stop container
 
