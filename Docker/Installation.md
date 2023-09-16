@@ -35,23 +35,18 @@ logout and back in or reboot your virtual machine
 ```bash
 sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 ```
-
 ----
 
 
-
-
-
------------------------------------------
-
+- Login to docker hub:
+```bash
 nano ~/my_password.txt
-
 cat ~/my_password.txt | docker login --username arazcode --password-stdin
 
-OR
+# OR
 
 docker login -u arazcode -p danial123
-
+```
 
 
 
