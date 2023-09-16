@@ -48,12 +48,10 @@ cat ~/my_password.txt | docker login --username arazcode --password-stdin
 docker login -u arazcode -p danial123
 ```
 
-
-
------------------------------------------
-
-# Get images
+- Get docker images
+```bash
 docker pull nginx
+```
 
 # Run container
 deattach and run in background
