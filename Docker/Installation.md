@@ -24,6 +24,9 @@ sudo apt-get update
 - Install docker engine
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 
 - Uninstall Docker Engine
@@ -33,9 +36,7 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 -----------------------------------------
 
-sudo groupadd docker
 
-sudo usermod -aG docker $USER
 
 
 # logout and back in or reboot your virtual machine
