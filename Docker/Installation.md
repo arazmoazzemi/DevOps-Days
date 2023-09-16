@@ -79,22 +79,12 @@ docker start ac6c83fcfd73
 docker start zealous_bardeen
 ```
 
-
-
-
-
-
-
------------------------------------------
-
-
-
-
+| Example:
+```bash
 sudo docker run hello-world
-
 docker ps -a
 docker images
-
+```
 
 
 sudo service docker start
