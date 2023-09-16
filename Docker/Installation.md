@@ -21,12 +21,12 @@ echo \
 sudo apt-get update
 ```
 
-Install docker engine
+- Install docker engine
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-Uninstall Docker Engine
+- Uninstall Docker Engine
 ```bash
 sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 ```
