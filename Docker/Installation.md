@@ -25,6 +25,9 @@ sudo apt-get update
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+sudo service docker start
+sudo service docker enable
+
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
@@ -87,8 +90,6 @@ docker images
 ```
 
 
-sudo service docker start
-sudo docker run hello-world
 
 
 
