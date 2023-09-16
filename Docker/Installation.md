@@ -29,6 +29,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
 logout and back in or reboot your virtual machine
+
 ----
 - Uninstall Docker Engine
 ```bash
