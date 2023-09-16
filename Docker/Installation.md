@@ -71,12 +71,13 @@ docker stop {CONTAINER ID} or {NAMES}
 docker stop ac6c83fcfd73
 docker stop zealous_bardeen
 ```
-# Start container
 
+- Start container
+```bash
 docker start {CONTAINER ID} or {NAMES}
 docker start ac6c83fcfd73
 docker start zealous_bardeen
-
+```
 
 
 
