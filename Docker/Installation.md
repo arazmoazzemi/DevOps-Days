@@ -40,7 +40,6 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 ```
 ----
 
-
 - Login to docker hub:
 ```bash
 nano ~/my_password.txt
