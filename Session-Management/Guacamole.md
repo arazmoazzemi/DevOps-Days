@@ -80,8 +80,10 @@ sudo which nft >/dev/null && echo nftables is enabled in this system || echo ufw
 nft flush ruleset
 ```
 
-# To prevent nftables from starting at boot:
+- To prevent nftables from starting at boot:
+```bash
 systemctl mask nftables.service
+```
 
 # To uninstall it and purge any traces of nftables in your system:
 aptitude purge nftables
