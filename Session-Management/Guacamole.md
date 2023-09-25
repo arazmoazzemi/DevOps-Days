@@ -85,8 +85,10 @@ nft flush ruleset
 systemctl mask nftables.service
 ```
 
-# To uninstall it and purge any traces of nftables in your system:
+- To uninstall it and purge any traces of nftables in your system:
+```bash
 aptitude purge nftables
+```
 
 ----
 Docker Installation:
