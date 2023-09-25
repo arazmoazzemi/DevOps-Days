@@ -97,9 +97,7 @@ aptitude purge nftables
 
 ----
 
-
-Proxying Guacamole
-https://guacamole.apache.org/doc/gug/configuring-guacamole.html
+### [Proxying Guacamole](https://guacamole.apache.org/doc/gug/configuring-guacamole.html)
 
 
 Two setp Varification
