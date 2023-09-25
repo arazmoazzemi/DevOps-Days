@@ -75,8 +75,10 @@ Gateway={GATEWAY-IP-ADDRESS}
 open portdisable firewall and openport
 sudo which nft >/dev/null && echo nftables is enabled in this system || echo ufw is enabled in this system
 
-# To stop nftables from doing anything, just drop all the rules:
+- To stop nftables from doing anything, just drop all the rules:
+```bash
 nft flush ruleset
+```
 
 # To prevent nftables from starting at boot:
 systemctl mask nftables.service
