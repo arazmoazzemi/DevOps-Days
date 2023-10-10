@@ -18,8 +18,7 @@ qemu-img convert -O qcow2 bitnami-guacamole-1.5.3-r0-debian-11-amd64.vmdk guacam
 ```
 
 
-convert images
-
+convert images:
 
 ----
 
