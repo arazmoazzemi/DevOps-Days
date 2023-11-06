@@ -1,4 +1,4 @@
-redis
+### Redis
 
 
 docker run -d --name redis redis
@@ -88,7 +88,7 @@ keys name*
 
 ---
 FLUSH
-Note! In redis exists 16 databese [0-15] and Default databese is 0 (Sharding in one instance)
+Note! In redis exists 16 databese [0-15] and Default databese is 0 (Sharding redis databse in one instance)
 
 Example:
 
@@ -102,11 +102,45 @@ select 0 keys *
 flushdb
 Delete running database
 
+Flushdb 01-Exampe:
+```
+select 15
+set h 10
+keys *
+
+flushdb 
+
+keys *
+select 0
+keys *
+```
+Databese 0 is exist, Just database 15 is deleted
+
+
+
+```
+
 
 flushall
 Delete all of databases
 
+select 2
+set x 10
+set y 20
+keys *
 
+flush all
+
+select 0
+keys *
+
+#Also
+
+select 15
+keys *
+
+All pf databases are deleted
+(empty array)
 ---
 
 
