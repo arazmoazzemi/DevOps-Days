@@ -87,8 +87,26 @@ set name3 rosa
 keys name*
 
 ---
+FLUSH
+Note! In redis exists 16 databese [0-15] and Default databese is 0
+
+Example:
+
+select 1
+keys *
+# (empty array)
+
+select 0 keys *
 
 
+flushdb
+Delete running database
+
+flushall
+Delete all of databases
+
+
+---
 
 
 
