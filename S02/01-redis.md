@@ -88,7 +88,7 @@ keys name*
 
 ---
 FLUSH
-Note! In redis exists 16 databese [0-15] and Default databese is 0
+Note! In redis exists 16 databese [0-15] and Default databese is 0 (Sharding in one instance)
 
 Example:
 
@@ -101,6 +101,7 @@ select 0 keys *
 
 flushdb
 Delete running database
+
 
 flushall
 Delete all of databases
