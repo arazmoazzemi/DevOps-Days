@@ -65,7 +65,7 @@ get test
 
 ---
 
-Moniter
+Moniter(watch):
 # we need two terminal for this this commands:
 
 get test devops
