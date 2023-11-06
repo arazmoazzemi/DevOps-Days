@@ -75,10 +75,18 @@ get test
 ---
 
 
+KEYS:
+Show all keys:
 
+keys *
 
+set name1 john 
+set name2 araz
+set name3 rosa
 
+keys name*
 
+---
 
 
 
