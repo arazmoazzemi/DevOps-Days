@@ -1,13 +1,15 @@
 ### Redis
 
-
+docker
+```cmd
 docker run -d --name redis redis
-
 docker exec -it redis bash
+```
 
 connect to database:
+```cmd
 redis-cli
-
+```
 ### partitioning for increase database speed and performance
 
 ---
