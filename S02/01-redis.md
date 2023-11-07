@@ -34,9 +34,9 @@ get x
 
 Increament:
 INCR
-cmd```
+```bash
 incr 10
-
+```
 ---
 
 - Decrement:
