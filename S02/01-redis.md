@@ -10,7 +10,7 @@ connect to database:
 ```bash
 redis-cli
 ```
-### partitioning is the way for increase database speed and performance
+#### partitioning is the way for increase database speed and performance
 
 ---
 
