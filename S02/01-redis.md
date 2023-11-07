@@ -1,12 +1,12 @@
 ### Redis Help
 
-docker
+- docker
 ```cmd
 docker run -d --name redis redis
 docker exec -it redis bash
 ```
 
-connect to database:
+- connect to database:
 ```bash
 redis-cli
 ```
@@ -14,13 +14,13 @@ redis-cli
 
 ---
 
-check Redis connectivity
+- check Redis connectivity
 ```bash
 PING 
 ```
 ---
 
-data store for key value:
+- data store for key value:
 SET
 ```bash
 set test devops
@@ -39,6 +39,7 @@ incr 10
 
 ---
 
+- Decrement:
 DECR
 ```bash
 decr 10
@@ -47,15 +48,15 @@ decr 10
 
 ---
 
-find:
+- find:
 EXISTS
-```c,d
+```bash
 exists test
 ```
 
 ---
 
-delete:
+- delete:
 del 
 ```cmd
 del test
@@ -63,7 +64,7 @@ del test
 
 ---
 
-override:
+- override:
 ```bash
 set test devops
 get test
@@ -74,8 +75,8 @@ get test
 
 ---
 
-Moniter(watch):
-# we need two terminal for this this commands:
+- Moniter(watch):
+#### we need two terminal for this this commands:
 ```bash
 get test devops
 get test
@@ -84,7 +85,7 @@ get test
 ---
 
 
-KEYS:
+- KEYS:
 Show all keys:
 ```bash
 keys *
