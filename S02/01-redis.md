@@ -44,7 +44,6 @@ DECR
 ```bash
 decr x
 ```
-```
 
 ---
 
