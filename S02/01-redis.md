@@ -35,14 +35,14 @@ get x
 Increament:
 INCR
 ```bash
-incr 10
+incr x
 ```
 ---
 
 - Decrement:
 DECR
 ```bash
-decr 10
+decr x
 ```
 ```
 
