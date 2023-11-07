@@ -105,10 +105,9 @@ Example:
 ```bash
 select 1
 keys *
-# (empty array)
+#(empty array)
 
 select 0 keys *
-
 
 flushdb
 Delete running database
@@ -126,8 +125,9 @@ select 0
 keys *
 
 Databese 0 is exist, Just database 15 is deleted
+```
 
-
+```bash
 flushall
 Delete all of databases
 
