@@ -151,6 +151,8 @@ All pf databases are deleted
 
 ```
 ---
+# S02
+---
 
 Redis SDK
 https://redis.io/resources/clients/
@@ -182,6 +184,17 @@ docker inspect redis
 #   "IPAddress": "172.17.0.2"
 ```
 
+```
+from redis import Redis
+from redis.exceptions import ConnectionError
+
+redis = Redis(host="172.17.0.3")
+
+try:
+    redis.ping()
+except ConnectionError:
+    print("Connection Error.")
+```
 
 
 
