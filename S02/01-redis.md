@@ -152,8 +152,35 @@ All pf databases are deleted
 ```
 ---
 
+Redis SDK
+https://redis.io/resources/clients/
 
 
+python -m venv venv
+cd veen/acivate/activate.bat
+
+pip install redis
+
+
+docker start redis
+docker exec -it redis bash
+
+redis-cli
+
+```python
+from redis import Redis
+redis = Redis()
+
+redis.ping()
+```
+
+Connect to redis(docker)
+show ip address:
+```cmd
+docker inspect redis
+
+#   "IPAddress": "172.17.0.2"
+```
 
 
 
