@@ -157,9 +157,12 @@ All pf databases are deleted
 Redis SDK
 https://redis.io/resources/clients/
 
-
+```cmd
 python -m venv venv
-cd veen/acivate/activate.bat
+cd venv\Scripts
+activate.bat
+```
+
 
 pip install redis
 
