@@ -75,7 +75,7 @@ get test
 ---
 
 - Moniter(watch):
-#### we need two terminal for this this commands:
+#### we need two terminal for run his this commands:
 ```bash
 get test devops
 get test
