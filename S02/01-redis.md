@@ -1,4 +1,4 @@
-### Redis
+### Redis Help
 
 docker
 ```cmd
@@ -7,79 +7,86 @@ docker exec -it redis bash
 ```
 
 connect to database:
-```cmd
+```bash
 redis-cli
 ```
-### partitioning for increase database speed and performance
+### partitioning is the way for increase database speed and performance
 
 ---
 
 check Redis connectivity
-PING ----> PONG
-
+```bash
+PING 
+```
 ---
 
 data store for key value:
 SET
-
+```bash
 set test devops
 get test
 
 set x 10
 get x
+```
 
-----
+---
 
 Increament:
 INCR
-
+cmd```
 incr 10
 
+---
 
 DECR
-
+```bash
 decr 10
+```
+```
+
 ---
 
 find:
 EXISTS
-
+```c,d
 exists test
-
+```
 
 ---
 
 delete:
 del 
-
+```cmd
 del test
-
+```
 
 ---
 
 override:
-
+```bash
 set test devops
 get test
 
 set test redis
 get test
+```
 
 ---
 
 Moniter(watch):
 # we need two terminal for this this commands:
-
+```bash
 get test devops
 get test
-
+```
 
 ---
 
 
 KEYS:
 Show all keys:
-
+```bash
 keys *
 
 set name1 john 
@@ -87,13 +94,15 @@ set name2 araz
 set name3 rosa
 
 keys name*
+```
 
 ---
+
 FLUSH
 Note! In redis exists 16 databese [0-15] and Default databese is 0 (Sharding redis databse in one instance)
 
 Example:
-
+```bash
 select 1
 keys *
 # (empty array)
@@ -105,7 +114,7 @@ flushdb
 Delete running database
 
 Flushdb 01-Exampe:
-```
+
 select 15
 set h 10
 keys *
@@ -115,12 +124,8 @@ flushdb
 keys *
 select 0
 keys *
-```
+
 Databese 0 is exist, Just database 15 is deleted
-
-
-
-```
 
 
 flushall
@@ -143,6 +148,8 @@ keys *
 
 All pf databases are deleted
 (empty array)
+
+```
 ---
 
 
