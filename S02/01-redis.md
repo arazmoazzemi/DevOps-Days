@@ -257,6 +257,33 @@ print(x.decode('ascii'))
 
 
 
+----------------------------------
+```
+from redis import Redis
+from redis.exceptions import ClusterError
+from time import sleep
+
+redis = Redis(host="172.17.0.2", decode_responses=True)
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+sleep(15)
+
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+
+x = redis.get("test")
+print(x)
+```
+
+---
 
 
 
