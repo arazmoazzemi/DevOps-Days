@@ -239,8 +239,9 @@ print(x)
 
 OR
 
----
-rom redis import Redis
+---print binary to sting-------------------
+
+from redis import Redis
 from redis.exceptions import ClusterError
 
 redis = Redis(host="172.17.0.2", decode_responses=False)
