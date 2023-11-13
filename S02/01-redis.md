@@ -286,6 +286,36 @@ print(x)
 ---
 
 
+### ExponentialBackoff
+
+```
+from redis import Redis
+from redis.exceptions import ClusterError
+from time import sleep
+from redis.backoff import ExponentialBackoff
+from redis.retry import Retry
+
+retry = Retry(ExponentialBackoff, 3)
+redis = Redis(host="172.17.0.2", decode_responses=True, retry=Retry)
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+sleep(15)
+
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+
+x = redis.get("test")
+print(x)
+```
+
 
 
 
