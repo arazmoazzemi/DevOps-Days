@@ -207,7 +207,7 @@ docker inspect redis
 ---test connection:
 
 rom redis import Redis
-from redis.exceptions import ClusterError
+from redis.exceptions import ConnectionError
 
 redis = Redis(host="172.17.0.2")
 try:
@@ -242,7 +242,7 @@ OR
 ---print binary to sting-------------------
 
 from redis import Redis
-from redis.exceptions import ClusterError
+from redis.exceptions import ConnectionError
 
 redis = Redis(host="172.17.0.2", decode_responses=False)
 try:
@@ -260,7 +260,7 @@ print(x.decode('ascii'))
 ----------------------------------
 ```
 from redis import Redis
-from redis.exceptions import ClusterError
+from redis.exceptions import ConnectionError
 from time import sleep
 
 redis = Redis(host="172.17.0.2", decode_responses=True)
