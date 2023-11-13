@@ -289,7 +289,6 @@ print(x)
 ### ExponentialBackoff for retry connection:
 
 ```
-from redis import Redis
 from redis.exceptions import ConnectionError
 from time import sleep
 from redis.backoff import ExponentialBackoff
@@ -304,7 +303,7 @@ except ConnectionError:
     print("ConnectionError!")
 else:
     print("ok")
-sleep(15)
+sleep(5)
 
 try:
     redis.ping()
@@ -312,6 +311,8 @@ except ConnectionError:
     print("ConnectionError!")
 else:
     print("ok")
+sleep(5)
+
 ```
 
 
