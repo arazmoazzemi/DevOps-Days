@@ -234,6 +234,25 @@ x = redis.get("test")
 
 print(x)
 
+```
+---
+
+OR
+
+---
+rom redis import Redis
+from redis.exceptions import ClusterError
+
+redis = Redis(host="172.17.0.2", decode_responses=False)
+try:
+    redis.ping()
+#    print("Connected")
+except ConnectionError:
+    print("ConnectionError!")
+
+x = redis.get("test")
+
+print(x.decode('ascii'))
 
 
 
