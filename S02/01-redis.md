@@ -315,8 +315,49 @@ sleep(5)
 
 ```
 
+---
+###write to app.py1
+```
+from redis import Redis
+from redis.exceptions import ConnectionError
+from time import sleep
+from redis.backoff import ExponentialBackoff
+from redis.retry import Retry
 
 
+redis = Redis(host="172.17.0.2", decode_responses=True)
+
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+
+redis.set("test", "devops")
+```
+### app2 get from app1.py
+```
+from redis import Redis
+from redis.exceptions import ConnectionError
+from time import sleep
+from redis.backoff import ExponentialBackoff
+from redis.retry import Retry
+
+
+redis = Redis(host="172.17.0.2", decode_responses=True)
+
+try:
+    redis.ping()
+except ConnectionError:
+    print("ConnectionError!")
+else:
+    print("ok")
+
+test = redis.get("test")
+print(test)
+
+```
 
 
 
