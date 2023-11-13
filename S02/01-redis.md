@@ -157,6 +157,19 @@ All pf databases are deleted
 Redis SDK
 https://redis.io/resources/clients/
 
+Docs:
+
+https://redis.readthedocs.io/en/stable/commands.html
+
+
+docker run -d --name redis redis
+docker start redis
+
+# docker run -p 6379:6379 -it redis/redis-stack:latest
+
+docker exec -it redis bash
+redis-cli
+
 ```cmd
 python -m venv venv
 cd venv\Scripts
@@ -188,16 +201,39 @@ docker inspect redis
 ```
 
 ```
-from redis import Redis
-from redis.exceptions import ConnectionError
+# get redis ip from docker
+docker inspect redis
 
-redis = Redis(host="172.17.0.3")
+---test connection:
 
+rom redis import Redis
+from redis.exceptions import ClusterError
+
+redis = Redis(host="172.17.0.2")
 try:
     redis.ping()
+    print("Connected")
 except ConnectionError:
-    print("Connection Error.")
-```
+    print("ConnectionError!")
+
+
+----------decode_responses---------------
+
+redis-cli
+
+SET test devops
+
+redis = Redis(host="172.17.0.2", decode_responses=True)
+try:
+    redis.ping()
+#    print("Connected")
+except ConnectionError:
+    print("ConnectionError!")
+
+x = redis.get("test")
+
+print(x)
+
 
 
 
