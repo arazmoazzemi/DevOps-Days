@@ -180,13 +180,16 @@ activate.bat
 
 ---
 
+```python
 pip install redis
+```
 
-
+```cmd
 docker start redis
 docker exec -it redis bash
 
 redis-cli
+```
 
 ```python
 from redis import Redis
