@@ -245,8 +245,9 @@ print(x)
 
 OR
 
----print binary to sting-------------------
+#### print binary to sting:
 
+```python
 from redis import Redis
 from redis.exceptions import ConnectionError
 
@@ -260,11 +261,10 @@ except ConnectionError:
 x = redis.get("test")
 
 print(x.decode('ascii'))
-
-
-
-----------------------------------
 ```
+---
+
+```python
 from redis import Redis
 from redis.exceptions import ConnectionError
 from time import sleep
