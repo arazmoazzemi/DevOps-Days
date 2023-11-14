@@ -152,7 +152,9 @@ All pf databases are deleted
 
 ```
 ---
+---
 # S02
+---
 ---
 
 Redis SDK
@@ -173,10 +175,12 @@ redis-cli
 ```
 ---
 
-```bash
-python -m venv venv
-cd venv\Scripts
-activate.bat
+Create a python envoiroment for test application:
+
+```cmd
+python3 -m venv venv
+cd /venv/bin
+source activate
 ```
 
 ---
