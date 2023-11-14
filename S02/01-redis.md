@@ -161,7 +161,7 @@ Docs:
 
 https://redis.readthedocs.io/en/stable/commands.html
 
-
+```cmd
 docker run -d --name redis redis
 docker start redis
 
@@ -169,6 +169,8 @@ docker start redis
 
 docker exec -it redis bash
 redis-cli
+```
+---
 
 ```cmd
 python -m venv venv
@@ -176,6 +178,7 @@ cd venv\Scripts
 activate.bat
 ```
 
+---
 
 pip install redis
 
