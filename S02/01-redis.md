@@ -292,7 +292,7 @@ print(x)
 ---
 
 
-- ### ExponentialBackoff for retry connection:
+- #### ExponentialBackoff for retry connection:
 
 ```
 from redis.exceptions import ConnectionError
