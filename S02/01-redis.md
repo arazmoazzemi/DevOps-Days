@@ -1,6 +1,7 @@
 ### Redis Help(DevOps days)
 
-- docker
+- docker:
+
 ```cmd
 docker run -d --name redis redis
 docker exec -it redis bash
