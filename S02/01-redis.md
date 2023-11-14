@@ -245,7 +245,7 @@ print(x)
 
 OR
 
-#### print binary to sting:
+- ##### print binary to sting:
 
 ```python
 from redis import Redis
