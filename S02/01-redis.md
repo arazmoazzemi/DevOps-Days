@@ -220,12 +220,14 @@ except ConnectionError:
     print("ConnectionError!")
 ```
 
-----------decode_responses---------------
+- #### decode_responses:
 
+```cmd
 redis-cli
 
 SET test devops
-
+```
+```pythoh
 redis = Redis(host="172.17.0.2", decode_responses=True)
 try:
     redis.ping()
@@ -238,6 +240,7 @@ x = redis.get("test")
 print(x)
 
 ```
+
 ---
 
 OR
