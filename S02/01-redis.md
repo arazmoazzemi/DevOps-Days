@@ -203,18 +203,13 @@ redis.ping()
 ```cmd
 docker inspect redis
 
-#   "IPAddress": "172.17.0.2"
+# "IPAddress": "172.17.0.2"
 ```
 
-```
-#### get redis ip from docker:
-```cmd
-docker inspect redis
-```
+#### connection test:
 
----connection test:
-
-rom redis import Redis
+```python
+from redis import Redis
 from redis.exceptions import ConnectionError
 
 redis = Redis(host="172.17.0.2")
@@ -223,7 +218,7 @@ try:
     print("Connected")
 except ConnectionError:
     print("ConnectionError!")
-
+```
 
 ----------decode_responses---------------
 
