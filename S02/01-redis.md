@@ -2,7 +2,7 @@
 
 - docker:
 
-```cmd
+```bash
 docker run -d --name redis redis
 docker exec -it redis bash
 ```
@@ -58,7 +58,7 @@ exists test
 
 - delete:
 del 
-```cmd
+```bash
 del test
 ```
 
@@ -162,7 +162,7 @@ Docs:
 
 https://redis.readthedocs.io/en/stable/commands.html
 
-```cmd
+```bash
 docker run -d --name redis redis
 docker start redis
 
@@ -173,7 +173,7 @@ redis-cli
 ```
 ---
 
-```cmd
+```bash
 python -m venv venv
 cd venv\Scripts
 activate.bat
@@ -185,7 +185,7 @@ activate.bat
 pip install redis
 ```
 
-```cmd
+```bash
 docker start redis
 docker exec -it redis bash
 
@@ -201,7 +201,7 @@ redis.ping()
 
 #### connect to redis(docker)
 - #### show ip address:
-```cmd
+```bash
 docker inspect redis
 
 # "IPAddress": "172.17.0.2"
@@ -223,7 +223,7 @@ except ConnectionError:
 
 - #### decode_responses:
 
-```cmd
+```bash
 redis-cli
 
 SET test devops
