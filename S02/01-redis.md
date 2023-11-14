@@ -166,7 +166,7 @@ https://redis.readthedocs.io/en/stable/commands.html
 docker run -d --name redis redis
 docker start redis
 
-# docker run -p 6379:6379 -it redis/redis-stack:latest
+# docker run -p 6379:6379 -d --name rdis redis
 
 docker exec -it redis bash
 redis-cli
