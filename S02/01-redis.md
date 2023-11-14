@@ -204,7 +204,7 @@ docker inspect redis
 # get redis ip from docker
 docker inspect redis
 
----test connection:
+---connection test:
 
 rom redis import Redis
 from redis.exceptions import ConnectionError
