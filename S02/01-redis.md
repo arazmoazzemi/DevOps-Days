@@ -198,8 +198,8 @@ redis = Redis()
 redis.ping()
 ```
 
-Connect to redis(docker)
-show ip address:
+#### connect to redis(docker)
+- #### show ip address:
 ```cmd
 docker inspect redis
 
@@ -207,8 +207,10 @@ docker inspect redis
 ```
 
 ```
-# get redis ip from docker
+#### get redis ip from docker:
+```cmd
 docker inspect redis
+```
 
 ---connection test:
 
