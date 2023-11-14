@@ -151,6 +151,7 @@ All pf databases are deleted
 (empty array)
 
 ```
+
 ---
 ---
 # S02
@@ -177,7 +178,8 @@ redis-cli
 
 Create a python envoiroment for test application:
 
-```cmd
+```bash
+sudo apt install python3-venv -y
 python3 -m venv venv
 cd /venv/bin
 source activate
