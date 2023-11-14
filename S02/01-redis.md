@@ -322,8 +322,9 @@ sleep(5)
 ```
 
 ---
-###write to app.py1
-```
+- #### (write to app.py1):
+
+```python
 from redis import Redis
 from redis.exceptions import ConnectionError
 from time import sleep
