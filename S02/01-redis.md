@@ -421,12 +421,11 @@ redis.set("test", "devops")
 app1.py
 
 ```python 
-rom redis import Redis
+from redis import Redis
 from redis.exceptions import ConnectionError
 from time import sleep
 from redis.backoff import ExponentialBackoff
 from redis.retry import Retry
-
 
 redis = Redis(host="127.0.0.1", decode_responses=True)
 
@@ -438,8 +437,12 @@ else:
     print("ok")
 
 redis.set("test", "10")
-redis.watch("test")
 
+while redis.watch("test") is None:
+    pass
+
+x = redis.get("test")
+print(x)
 ```
 
 
