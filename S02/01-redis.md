@@ -378,7 +378,7 @@ print(test)
 
 First---run app2.py
 
-rom redis import Redis
+from redis import Redis
 from redis.exceptions import ConnectionError
 
 redis = Redis(host="172.17.0.2", decode_responses=True)
