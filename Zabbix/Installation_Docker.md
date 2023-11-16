@@ -13,7 +13,6 @@ The example demonstrates how to run Zabbix server with MySQL database support, Z
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 ```
 2. Start empty MySQL server instance
-
 ```bash
 docker run --name mysql-server -t \
     -e MYSQL_DATABASE="zabbix" \
