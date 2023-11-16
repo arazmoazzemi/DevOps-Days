@@ -94,19 +94,21 @@ docker run --name zabbix-snmptraps -t \
 ```
     
 4. Start Zabbix server instance and link the instance with created PostgreSQL server instance
-
-# docker run --name zabbix-server-pgsql -t \
-      -e DB_SERVER_HOST="postgres-server" \
-      -e POSTGRES_USER="zabbix" \
-      -e POSTGRES_PASSWORD="zabbix_pwd" \
-      -e POSTGRES_DB="zabbix" \
-      -e ZBX_ENABLE_SNMP_TRAPS="true" \
-      --network=zabbix-net \
-      -p 10051:10051 \
-      --volumes-from zabbix-snmptraps \
-      --restart unless-stopped \
-      -d zabbix/zabbix-server-pgsql:alpine-6.4-latest
-5. Start Zabbix web interface and link the instance with created PostgreSQL server and Zabbix server instances
+```bash
+docker run --name zabbix-server-pgsql -t \
+    -e DB_SERVER_HOST="postgres-server" \
+    -e POSTGRES_USER="zabbix" \
+    -e POSTGRES_PASSWORD="zabbix_pwd" \
+    -e POSTGRES_DB="zabbix" \
+    -e ZBX_ENABLE_SNMP_TRAPS="true" \
+    --network=zabbix-net \
+    -p 10051:10051 \
+    --volumes-from zabbix-snmptraps \
+    --restart unless-stopped \
+    -d zabbix/zabbix-server-pgsql:alpine-6.4-latest
+```
+   
+6. Start Zabbix web interface and link the instance with created PostgreSQL server and Zabbix server instances
 
 # docker run --name zabbix-web-nginx-pgsql -t \
       -e ZBX_SERVER_HOST="zabbix-server-pgsql" \
