@@ -46,19 +46,21 @@ docker run --name zabbix-server-mysql -t \
     --restart unless-stopped \
     -d zabbix/zabbix-server-mysql:alpine-6.4-latest
 ```
-5. Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances
 
-# docker run --name zabbix-web-nginx-mysql -t \
-      -e ZBX_SERVER_HOST="zabbix-server-mysql" \
-      -e DB_SERVER_HOST="mysql-server" \
-      -e MYSQL_DATABASE="zabbix" \
-      -e MYSQL_USER="zabbix" \
-      -e MYSQL_PASSWORD="zabbix_pwd" \
-      -e MYSQL_ROOT_PASSWORD="root_pwd" \
-      --network=zabbix-net \
-      -p 80:8080 \
-      --restart unless-stopped \
-      -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
+5. Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances
+bash```
+docker run --name zabbix-web-nginx-mysql -t \
+    -e ZBX_SERVER_HOST="zabbix-server-mysql" \
+    -e DB_SERVER_HOST="mysql-server" \
+    -e MYSQL_DATABASE="zabbix" \
+    -e MYSQL_USER="zabbix" \
+    -e MYSQL_PASSWORD="zabbix_pwd" \
+    -e MYSQL_ROOT_PASSWORD="root_pwd" \
+    --network=zabbix-net \
+    -p 80:8080 \
+    --restart unless-stopped \
+    -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
+```
 Example 2
 
 The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.
