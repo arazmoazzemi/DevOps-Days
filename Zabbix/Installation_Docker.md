@@ -143,7 +143,7 @@ podman run --name zabbix-agent \
 ```
 
 3. Create ./mysql/ directory on host and start Oracle MySQL server 8.0:
-bash```
+```bash
 podman run --name mysql-server -t \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
