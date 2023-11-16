@@ -67,18 +67,22 @@ Example 2
 - ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
 1. Create network dedicated for Zabbix component containers:
+```bash
+docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
+```
 
-# docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 2. Start empty PostgreSQL server instance
+```bash
+docker run --name postgres-server -t \
+    -e POSTGRES_USER="zabbix" \
+    -e POSTGRES_PASSWORD="zabbix_pwd" \
+    -e POSTGRES_DB="zabbix" \
+    --network=zabbix-net \
+    --restart unless-stopped \
+    -d postgres:latest
+```
 
-# docker run --name postgres-server -t \
-      -e POSTGRES_USER="zabbix" \
-      -e POSTGRES_PASSWORD="zabbix_pwd" \
-      -e POSTGRES_DB="zabbix" \
-      --network=zabbix-net \
-      --restart unless-stopped \
-      -d postgres:latest
-3. Start Zabbix snmptraps instance
+4. Start Zabbix snmptraps instance
 
 # docker run --name zabbix-snmptraps -t \
       -v /zbx_instance/snmptraps:/var/lib/zabbix/snmptraps:rw \
