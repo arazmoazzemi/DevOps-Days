@@ -422,7 +422,7 @@ redis.set("test", "devops")
 
 ```bash
 set test devops
-expire 10
+expire test 10
 ```
 
 
