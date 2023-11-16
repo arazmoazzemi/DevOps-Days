@@ -13,16 +13,19 @@ The example demonstrates how to run Zabbix server with MySQL database support, Z
 # docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 2. Start empty MySQL server instance
 
-# docker run --name mysql-server -t \
-      -e MYSQL_DATABASE="zabbix" \
-      -e MYSQL_USER="zabbix" \
-      -e MYSQL_PASSWORD="zabbix_pwd" \
-      -e MYSQL_ROOT_PASSWORD="root_pwd" \
-      --network=zabbix-net \
-      --restart unless-stopped \
-      -d mysql:8.0-oracle \
-      --character-set-server=utf8 --collation-server=utf8_bin \
-      --default-authentication-plugin=mysql_native_password
+```bash
+docker run --name mysql-server -t \
+    -e MYSQL_DATABASE="zabbix" \
+    -e MYSQL_USER="zabbix" \
+    -e MYSQL_PASSWORD="zabbix_pwd" \
+    -e MYSQL_ROOT_PASSWORD="root_pwd" \
+    --network=zabbix-net \
+    --restart unless-stopped \
+    -d mysql:8.0-oracle \
+    --character-set-server=utf8 --collation-server=utf8_bin \
+    --default-authentication-plugin=mysql_native_password
+```
+    
 3. Start Zabbix Java gateway instance
 
 # docker run --name zabbix-java-gateway -t \
