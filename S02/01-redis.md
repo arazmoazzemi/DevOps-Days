@@ -102,7 +102,7 @@ keys name*
 FLUSH
 Note! In redis exists 16 databese [0-15] and Default databese is 0 (Sharding redis databse in one instance)
 
-Example:
+For example:
 ```bash
 select 1
 keys *
