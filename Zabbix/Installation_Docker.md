@@ -83,14 +83,16 @@ docker run --name postgres-server -t \
 ```
 
 4. Start Zabbix snmptraps instance
-
-# docker run --name zabbix-snmptraps -t \
-      -v /zbx_instance/snmptraps:/var/lib/zabbix/snmptraps:rw \
-      -v /var/lib/zabbix/mibs:/usr/share/snmp/mibs:ro \
-      --network=zabbix-net \
-      -p 162:1162/udp \
-      --restart unless-stopped \
-      -d zabbix/zabbix-snmptraps:alpine-6.4-latest
+```bash
+docker run --name zabbix-snmptraps -t \
+    -v /zbx_instance/snmptraps:/var/lib/zabbix/snmptraps:rw \
+    -v /var/lib/zabbix/mibs:/usr/share/snmp/mibs:ro \
+    --network=zabbix-net \
+    -p 162:1162/udp \
+    --restart unless-stopped \
+    -d zabbix/zabbix-snmptraps:alpine-6.4-latest
+```
+    
 4. Start Zabbix server instance and link the instance with created PostgreSQL server instance
 
 # docker run --name zabbix-server-pgsql -t \
