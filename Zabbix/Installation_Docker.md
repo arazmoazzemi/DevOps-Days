@@ -70,12 +70,12 @@ docker run --name zabbix-web-nginx-mysql -t \
 
 - ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
-1. Create network dedicated for Zabbix component containers:
+- Create network dedicated for Zabbix component containers:
 ```bash
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 ```
 
-2. Start empty PostgreSQL server instance
+- Start empty PostgreSQL server instance:
 ```bash
 docker run --name postgres-server -t \
     -e POSTGRES_USER="zabbix" \
@@ -86,7 +86,7 @@ docker run --name postgres-server -t \
     -d postgres:latest
 ```
 
-4. Start Zabbix snmptraps instance
+- Start Zabbix snmptraps instance:
 ```bash
 docker run --name zabbix-snmptraps -t \
     -v /zbx_instance/snmptraps:/var/lib/zabbix/snmptraps:rw \
@@ -97,7 +97,7 @@ docker run --name zabbix-snmptraps -t \
     -d zabbix/zabbix-snmptraps:alpine-6.4-latest
 ```
     
-4. Start Zabbix server instance and link the instance with created PostgreSQL server instance
+- Start Zabbix server instance and link the instance with created PostgreSQL server instance:
 ```bash
 docker run --name zabbix-server-pgsql -t \
     -e DB_SERVER_HOST="postgres-server" \
@@ -112,7 +112,7 @@ docker run --name zabbix-server-pgsql -t \
     -d zabbix/zabbix-server-pgsql:alpine-6.4-latest
 ```
    
-6. Start Zabbix web interface and link the instance with created PostgreSQL server and Zabbix server instances
+- Start Zabbix web interface and link the instance with created PostgreSQL server and Zabbix server instances:
 ```bash
 docker run --name zabbix-web-nginx-pgsql -t \
     -e ZBX_SERVER_HOST="zabbix-server-pgsql" \
@@ -128,7 +128,10 @@ docker run --name zabbix-web-nginx-pgsql -t \
     -d zabbix/zabbix-web-nginx-pgsql:alpine-6.4-latest
 ```
 
-Example 3:
+---
+---
+
+#### Example 3:
 
 The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway using podman on Red Hat 8.
 
