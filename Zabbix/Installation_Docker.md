@@ -172,11 +172,13 @@ podman run --name zabbix-server-mysql -t \
 ```
 
 5. Start Zabbix Java Gateway container:
-
+```bash
 podman run --name zabbix-java-gateway -t \
       --restart=always \
       --pod=zabbix \
       -d registry.connect.redhat.com/zabbix/zabbix-java-gateway-64
+```
+
 6. Start Zabbix web-interface container:
 
 podman run --name zabbix-web-mysql -t \
