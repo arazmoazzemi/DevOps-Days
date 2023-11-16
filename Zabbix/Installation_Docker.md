@@ -63,7 +63,10 @@ docker run --name zabbix-web-nginx-mysql -t \
     -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
 ```
 
-xample 2:
+---
+---
+
+#### Example 2:
 
 - ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
