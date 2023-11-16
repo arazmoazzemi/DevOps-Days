@@ -29,12 +29,12 @@ sudo -i -u postgres createdb -O "maasuser" "maasdb"
 sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
 ```
 
---------------------------------------------------------------------------------------------------
+---
 
-
-Create PostgreSQL user:
+#### Create PostgreSQL user:
+bash```
 sudo -i -u postgres psql -c "CREATE USER \"$MAAS_DBUSER\" WITH ENCRYPTED PASSWORD '$MAAS_DBPASS'"
-
+```
 
 
 Create the MAAS database:
