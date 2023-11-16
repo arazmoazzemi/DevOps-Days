@@ -135,10 +135,12 @@ docker run --name zabbix-web-nginx-pgsql -t \
 
 The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway using podman on Red Hat 8.
 
-1. Create new pod with name zabbix and exposed ports (web-interface, Zabbix server trapper):
-
+- Create new pod with name zabbix and exposed ports (web-interface, Zabbix server trapper):
+```bash
 podman pod create --name zabbix -p 80:8080 -p 10051:10051
-2. (optional) Start Zabbix agent container in zabbix pod location:
+```
+
+- (optional) Start Zabbix agent container in zabbix pod location:
 
 ```bash
 podman run --name zabbix-agent \
@@ -148,7 +150,7 @@ podman run --name zabbix-agent \
     -d registry.connect.redhat.com/zabbix/zabbix-agent-64:latest
 ```
 
-3. Create ./mysql/ directory on host and start Oracle MySQL server 8.0:
+- Create ./mysql/ directory on host and start Oracle MySQL server 8.0:
 ```bash
 podman run --name mysql-server -t \
       -e MYSQL_DATABASE="zabbix" \
@@ -163,7 +165,7 @@ podman run --name mysql-server -t \
       --default-authentication-plugin=mysql_native_password
 ```
 
-5. Start Zabbix server container:
+- Start Zabbix server container:
 ```bash
 podman run --name zabbix-server-mysql -t \
                   -e DB_SERVER_HOST="127.0.0.1" \
@@ -177,7 +179,7 @@ podman run --name zabbix-server-mysql -t \
                   -d registry.connect.redhat.com/zabbix/zabbix-server-mysql-64
 ```
 
-5. Start Zabbix Java Gateway container:
+- Start Zabbix Java Gateway container:
 ```bash
 podman run --name zabbix-java-gateway -t \
       --restart=always \
@@ -185,7 +187,7 @@ podman run --name zabbix-java-gateway -t \
       -d registry.connect.redhat.com/zabbix/zabbix-java-gateway-64
 ```
 
-6. Start Zabbix web-interface container:
+- Start Zabbix web-interface container:
 ```bash
 podman run --name zabbix-web-mysql -t \
                   -e ZBX_SERVER_HOST="127.0.0.1" \
