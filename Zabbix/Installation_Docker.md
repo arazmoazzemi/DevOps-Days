@@ -62,7 +62,8 @@ docker run --name zabbix-web-nginx-mysql -t \
     --restart unless-stopped \
     -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
 ```
-Example 2
+
+Example 2:
 
 - ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
@@ -124,7 +125,7 @@ docker run --name zabbix-web-nginx-pgsql -t \
     -d zabbix/zabbix-web-nginx-pgsql:alpine-6.4-latest
 ```
 
-Example 3
+Example 3:
 
 The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway using podman on Red Hat 8.
 
@@ -157,7 +158,7 @@ podman run --name mysql-server -t \
 ```
 
 5. Start Zabbix server container:
-
+```bash
 podman run --name zabbix-server-mysql -t \
                   -e DB_SERVER_HOST="127.0.0.1" \
                   -e MYSQL_DATABASE="zabbix" \
@@ -168,6 +169,8 @@ podman run --name zabbix-server-mysql -t \
                   --restart=always \
                   --pod=zabbix \
                   -d registry.connect.redhat.com/zabbix/zabbix-server-mysql-64
+```
+
 5. Start Zabbix Java Gateway container:
 
 podman run --name zabbix-java-gateway -t \
