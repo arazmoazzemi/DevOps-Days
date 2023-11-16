@@ -10,6 +10,7 @@
 ```bash
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 ```
+
 2. Start empty MySQL server instance
 ```bash
 docker run --name mysql-server -t \
@@ -25,7 +26,7 @@ docker run --name mysql-server -t \
 ```
     
 3. Start Zabbix Java gateway instance
-bash```
+```bash
 docker run --name zabbix-java-gateway -t \
     --network=zabbix-net \
     --restart unless-stopped \
@@ -33,7 +34,7 @@ docker run --name zabbix-java-gateway -t \
 ```
     
 4. Start Zabbix server instance and link the instance with created MySQL server instance
-bash```
+```bash
 docker run --name zabbix-server-mysql -t \
     -e DB_SERVER_HOST="mysql-server" \
     -e MYSQL_DATABASE="zabbix" \
