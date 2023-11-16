@@ -133,11 +133,14 @@ The example demonstrates how to run Zabbix server with MySQL database support, Z
 podman pod create --name zabbix -p 80:8080 -p 10051:10051
 2. (optional) Start Zabbix agent container in zabbix pod location:
 
+```bash
 podman run --name zabbix-agent \
     -e ZBX_SERVER_HOST="127.0.0.1,localhost" \
     --restart=always \
     --pod=zabbix \
     -d registry.connect.redhat.com/zabbix/zabbix-agent-64:latest
+```
+
 3. Create ./mysql/ directory on host and start Oracle MySQL server 8.0:
 
 podman run --name mysql-server -t \
