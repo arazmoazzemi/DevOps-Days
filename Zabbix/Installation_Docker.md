@@ -142,7 +142,7 @@ podman run --name zabbix-agent \
 ```
 
 3. Create ./mysql/ directory on host and start Oracle MySQL server 8.0:
-
+bash```
 podman run --name mysql-server -t \
       -e MYSQL_DATABASE="zabbix" \
       -e MYSQL_USER="zabbix" \
@@ -154,7 +154,9 @@ podman run --name mysql-server -t \
       -d mysql:8.0 \
       --character-set-server=utf8 --collation-server=utf8_bin \
       --default-authentication-plugin=mysql_native_password
-4. Start Zabbix server container:
+```
+
+5. Start Zabbix server container:
 
 podman run --name zabbix-server-mysql -t \
                   -e DB_SERVER_HOST="127.0.0.1" \
