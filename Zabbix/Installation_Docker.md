@@ -180,7 +180,7 @@ podman run --name zabbix-java-gateway -t \
 ```
 
 6. Start Zabbix web-interface container:
-
+```bash
 podman run --name zabbix-web-mysql -t \
                   -e ZBX_SERVER_HOST="127.0.0.1" \
                   -e DB_SERVER_HOST="127.0.0.1" \
@@ -191,5 +191,5 @@ podman run --name zabbix-web-mysql -t \
                   --restart=always \
                   --pod=zabbix \
                   -d registry.connect.redhat.com/zabbix/zabbix-web-mysql-64
-
+```
 
