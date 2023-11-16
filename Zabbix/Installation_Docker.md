@@ -33,18 +33,19 @@ docker run --name zabbix-java-gateway -t \
 ```
     
 4. Start Zabbix server instance and link the instance with created MySQL server instance
-
-# docker run --name zabbix-server-mysql -t \
-      -e DB_SERVER_HOST="mysql-server" \
-      -e MYSQL_DATABASE="zabbix" \
-      -e MYSQL_USER="zabbix" \
-      -e MYSQL_PASSWORD="zabbix_pwd" \
-      -e MYSQL_ROOT_PASSWORD="root_pwd" \
-      -e ZBX_JAVAGATEWAY="zabbix-java-gateway" \
-      --network=zabbix-net \
-      -p 10051:10051 \
-      --restart unless-stopped \
-      -d zabbix/zabbix-server-mysql:alpine-6.4-latest
+bash```
+docker run --name zabbix-server-mysql -t \
+    -e DB_SERVER_HOST="mysql-server" \
+    -e MYSQL_DATABASE="zabbix" \
+    -e MYSQL_USER="zabbix" \
+    -e MYSQL_PASSWORD="zabbix_pwd" \
+    -e MYSQL_ROOT_PASSWORD="root_pwd" \
+    -e ZBX_JAVAGATEWAY="zabbix-java-gateway" \
+    --network=zabbix-net \
+    -p 10051:10051 \
+    --restart unless-stopped \
+    -d zabbix/zabbix-server-mysql:alpine-6.4-latest
+```
 5. Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances
 
 # docker run --name zabbix-web-nginx-mysql -t \
