@@ -109,19 +109,21 @@ docker run --name zabbix-server-pgsql -t \
 ```
    
 6. Start Zabbix web interface and link the instance with created PostgreSQL server and Zabbix server instances
+```bash
+docker run --name zabbix-web-nginx-pgsql -t \
+    -e ZBX_SERVER_HOST="zabbix-server-pgsql" \
+    -e DB_SERVER_HOST="postgres-server" \
+    -e POSTGRES_USER="zabbix" \
+    -e POSTGRES_PASSWORD="zabbix_pwd" \
+    -e POSTGRES_DB="zabbix" \
+    --network=zabbix-net \
+    -p 443:8443 \
+    -p 80:8080 \
+    -v /etc/ssl/nginx:/etc/ssl/nginx:ro \
+    --restart unless-stopped \
+    -d zabbix/zabbix-web-nginx-pgsql:alpine-6.4-latest
+```
 
-# docker run --name zabbix-web-nginx-pgsql -t \
-      -e ZBX_SERVER_HOST="zabbix-server-pgsql" \
-      -e DB_SERVER_HOST="postgres-server" \
-      -e POSTGRES_USER="zabbix" \
-      -e POSTGRES_PASSWORD="zabbix_pwd" \
-      -e POSTGRES_DB="zabbix" \
-      --network=zabbix-net \
-      -p 443:8443 \
-      -p 80:8080 \
-      -v /etc/ssl/nginx:/etc/ssl/nginx:ro \
-      --restart unless-stopped \
-      -d zabbix/zabbix-web-nginx-pgsql:alpine-6.4-latest
 Example 3
 
 The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway using podman on Red Hat 8.
