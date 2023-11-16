@@ -21,6 +21,7 @@ $HOSTNAME = localhost
 
 ```
 
+```bash
 sudo -i -u postgres psql -c "CREATE USER \"maasuser\" WITH ENCRYPTED PASSWORD '123456'"
 sudo -i -u postgres createdb -O "maasuser" "maasdb"
 
