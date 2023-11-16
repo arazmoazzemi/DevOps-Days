@@ -417,8 +417,13 @@ redis.set("test", "devops")
 ```
 ---
 
-- #### Pyhton generator and redis watch:
 
+#### Expire:
+
+```bash
+set test devops
+expire 10
+```
 
 
 
