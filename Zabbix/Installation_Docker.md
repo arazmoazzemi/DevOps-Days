@@ -64,7 +64,7 @@ docker run --name zabbix-web-nginx-mysql -t \
 ```
 Example 2
 
-The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.
+- ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
 1. Create network dedicated for Zabbix component containers:
 
