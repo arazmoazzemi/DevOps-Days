@@ -4,9 +4,7 @@
 [Installation from containers](https://www.zabbix.com/documentation/current/en/manual/installation/containers)
 
 
-Example 1
-
-The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway.
+#### Example 1:
 
 1. Create network dedicated for Zabbix component containers:
 ```bash
@@ -27,11 +25,13 @@ docker run --name mysql-server -t \
 ```
     
 3. Start Zabbix Java gateway instance
-
-# docker run --name zabbix-java-gateway -t \
-      --network=zabbix-net \
-      --restart unless-stopped \
-      -d zabbix/zabbix-java-gateway:alpine-6.4-latest
+bash```
+docker run --name zabbix-java-gateway -t \
+    --network=zabbix-net \
+    --restart unless-stopped \
+    -d zabbix/zabbix-java-gateway:alpine-6.4-latest
+```
+    
 4. Start Zabbix server instance and link the instance with created MySQL server instance
 
 # docker run --name zabbix-server-mysql -t \
