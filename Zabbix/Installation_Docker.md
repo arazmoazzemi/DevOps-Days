@@ -49,7 +49,7 @@ docker run --name zabbix-server-mysql -t \
 ```
 
 5. Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances
-bash```
+```bash
 docker run --name zabbix-web-nginx-mysql -t \
     -e ZBX_SERVER_HOST="zabbix-server-mysql" \
     -e DB_SERVER_HOST="mysql-server" \
