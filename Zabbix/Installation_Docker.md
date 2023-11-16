@@ -9,8 +9,9 @@ Example 1
 The example demonstrates how to run Zabbix server with MySQL database support, Zabbix web interface based on the Nginx web server and Zabbix Java gateway.
 
 1. Create network dedicated for Zabbix component containers:
-
-# docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
+```bash
+docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
+```
 2. Start empty MySQL server instance
 
 ```bash
