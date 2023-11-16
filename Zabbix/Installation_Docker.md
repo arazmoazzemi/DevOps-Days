@@ -6,12 +6,12 @@
 
 #### Example 1:
 
-1. Create network dedicated for Zabbix component containers:
+- Create network dedicated for Zabbix component containers:
 ```bash
 docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net
 ```
 
-2. Start empty MySQL server instance
+- Start empty MySQL server instance:
 ```bash
 docker run --name mysql-server -t \
     -e MYSQL_DATABASE="zabbix" \
@@ -25,7 +25,7 @@ docker run --name mysql-server -t \
     --default-authentication-plugin=mysql_native_password
 ```
     
-3. Start Zabbix Java gateway instance
+- Start Zabbix Java gateway instance:
 ```bash
 docker run --name zabbix-java-gateway -t \
     --network=zabbix-net \
@@ -33,7 +33,7 @@ docker run --name zabbix-java-gateway -t \
     -d zabbix/zabbix-java-gateway:alpine-6.4-latest
 ```
     
-4. Start Zabbix server instance and link the instance with created MySQL server instance
+- Start Zabbix server instance and link the instance with created MySQL server instance:
 ```bash
 docker run --name zabbix-server-mysql -t \
     -e DB_SERVER_HOST="mysql-server" \
@@ -48,7 +48,7 @@ docker run --name zabbix-server-mysql -t \
     -d zabbix/zabbix-server-mysql:alpine-6.4-latest
 ```
 
-5. Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances
+- Start Zabbix web interface and link the instance with created MySQL server and Zabbix server instances:
 ```bash
 docker run --name zabbix-web-nginx-mysql -t \
     -e ZBX_SERVER_HOST="zabbix-server-mysql" \
@@ -63,7 +63,7 @@ docker run --name zabbix-web-nginx-mysql -t \
     -d zabbix/zabbix-web-nginx-mysql:alpine-6.4-latest
 ```
 
-Example 2:
+xample 2:
 
 - ___The example demonstrates how to run Zabbix server with PostgreSQL database support, Zabbix web interface based on the Nginx web server and SNMP trap feature.___
 
