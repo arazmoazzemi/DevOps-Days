@@ -554,10 +554,13 @@ type class
 
 #### SCAN
 ```bash
-scan 
+scan 0
 ```
 
-
+#### RANDOMKEY
+```bash
+randomkey
+```
 
 
 
