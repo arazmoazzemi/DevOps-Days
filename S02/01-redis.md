@@ -505,9 +505,9 @@ mset test devops class python
 msetnx test devops class python
 ```
 
-#### MSETnx(with override)
+#### SETnx(override)
 ```bash
-
+setnx test devops class pyt
 ```
 
 
