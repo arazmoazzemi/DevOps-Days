@@ -531,7 +531,7 @@ append test test
 rename test x
 ```
 
-#### GETSET(For latest value)
+#### GETSET(Set vlaue For latest record)
 ```bash
 getset x test
 ```
