@@ -422,7 +422,13 @@ redis.set("test", "devops")
 
 ```bash
 set test devops
-expire test 10
+expire test 60
+```
+
+#### TTL(Expire status):
+
+```bash
+ttl test
 ```
 
 
