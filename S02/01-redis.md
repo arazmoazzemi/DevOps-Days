@@ -415,6 +415,7 @@ else:
 
 redis.set("test", "devops")
 ```
+
 ---
 
 
@@ -482,6 +483,8 @@ r.set(auth_count_key, 0)
 print("Wellcome to program...")
 ```
 
+---
+
 #### INCRBY:
 
 ```bash
@@ -511,7 +514,11 @@ setnx test devops class pyt
 ```
 
 
+#### MGET
 
+```bash
+mget test class
+```
 
 
 
