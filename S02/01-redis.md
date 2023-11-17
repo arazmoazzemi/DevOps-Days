@@ -482,3 +482,22 @@ if password != ask_password:
 print("Wellcome to program...")
 ```
 
+#### INCRBY:
+
+```bash
+incrby test 20
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
