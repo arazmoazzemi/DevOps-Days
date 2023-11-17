@@ -537,7 +537,7 @@ getset x test
 ```
 #### PERSIST
 ```bash
-setex reserve:test:x72jsh72 600
+setex reserve:test:x72jsh72 600 1
 
 ttl reserve:test:x72jsh72
 
