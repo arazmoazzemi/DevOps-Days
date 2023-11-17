@@ -488,6 +488,13 @@ print("Wellcome to program...")
 incrby test 20
 ```
 
+#### DECRBY:
+
+```bash
+decrby test 20
+```
+
+### 
 
 
 
