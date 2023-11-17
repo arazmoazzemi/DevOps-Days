@@ -431,6 +431,10 @@ expire test 60
 ttl test
 ```
 
+#### SETEX(Set key expire value at the same time simultaneously)
+```bash
+setex test 10 devops
+```
 
 
 
