@@ -494,8 +494,11 @@ incrby test 20
 decrby test 20
 ```
 
-### 
+####  MSET(Multiset)
 
+```bash
+mset test devops class python
+```
 
 
 
