@@ -436,7 +436,49 @@ ttl test
 setex test 10 devops
 ```
 
+#### Example:
 
+```bash
+from redis import Redis
+from redis.exceptions import ConnectionError
+from sys import exit
 
+r = Redis(host="127.0.0.1", decode_responses=True)
 
+try:
+    r.ping()
+    print("Connected")
+
+except ConnectionError:
+    print("Connection Error!")
+    exit(1)
+
+user = "araz"
+password = "123456"
+
+auth_count_key = ":".join(["auth", user, "auth_count"])
+auth_blocked_key = ":".join(["auth", user, "auth_blocked"])
+
+ask_password = input("Enter password: ")
+
+if r.exists(auth_blocked_key) != 0:
+    print("Authenticaion is current blocked for this user:")
+    exit(1)
+
+if password != ask_password:
+
+    if r.exists(auth_count_key) == 0 :
+        r.set(auth_count_key, 0)
+    current_auth_count = r.get(auth_count_key)
+    if int(current_auth_count) < 10:
+        r.incr(auth_count_key)
+    else:
+        r.setex(auth_blocked_key, 60, "1")
+        r.set(auth_count_key, 0)
+
+    print("Invalid password.")
+    exit(1)
+
+print("Wellcome to program...")
+```
 
