@@ -535,6 +535,16 @@ rename test x
 ```bash
 getset x test
 ```
+#### PERSIST
+```bash
+setex reserve:test:x72jsh72 600
+
+ttl reserve:test:x72jsh72
+
+persist reserve:test:x72jsh72
+
+```
+
 
 
 
