@@ -526,6 +526,13 @@ set test devops
 append test test
 ```
 
+#### RENAME
+```bash
+rename test x
+```
+
+
+
 
 
 
