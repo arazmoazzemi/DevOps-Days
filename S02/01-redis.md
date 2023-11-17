@@ -515,10 +515,17 @@ setnx test devops class pyt
 
 
 #### MGET
-
 ```bash
 mget test class
 ```
+
+#### APPEND
+```bash
+set test devops
+
+append test test
+```
+
 
 
 
