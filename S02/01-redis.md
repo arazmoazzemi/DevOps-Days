@@ -500,7 +500,15 @@ decrby test 20
 mset test devops class python
 ```
 
+#### MSETNX(Without override)
+```bash
+msetnx test devops class python
+```
 
+#### MSETnx(with override)
+```bash
+
+```
 
 
 
