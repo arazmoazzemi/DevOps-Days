@@ -467,8 +467,7 @@ if r.exists(auth_blocked_key) != 0:
 
 if password != ask_password:
 
-    if r.exists(auth_count_key) == 0 :
-        r.set(auth_count_key, 0)
+    r.setnx(auth_count_key, 0)
     current_auth_count = r.get(auth_count_key)
     if int(current_auth_count) < 10:
         r.incr(auth_count_key)
@@ -479,6 +478,7 @@ if password != ask_password:
     print("Invalid password.")
     exit(1)
 
+r.set(auth_count_key, 0)
 print("Wellcome to program...")
 ```
 
