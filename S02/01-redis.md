@@ -535,7 +535,8 @@ rename test x
 ```bash
 getset x test
 ```
-#### PERSIST
+
+#### PERSIST(Remove the existing timeout on key, turning the key from volatile (a key with an expire set) to persistent (a key that will never expire as no timeout is associated).)
 ```bash
 setex reserve:test:x72jsh72 600 1
 
