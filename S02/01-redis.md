@@ -531,6 +531,12 @@ append test test
 rename test x
 ```
 
+#### GETSET(For latest value)
+```bash
+getset x test
+```
+
+
 
 
 
