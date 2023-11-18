@@ -1,7 +1,7 @@
 ## Install Bare Metal As A Service(MASS-3.3):
 
 ```bash
-apt-get update && apt-get upgrade -y
+apt-get update && sudo apt-get upgrade -y
 sudo snap install --channel=3.3 maas
 sudo systemctl disable --now systemd-timesyncd
 ```
