@@ -9,8 +9,9 @@ sudo systemctl disable --now systemd-timesyncd
 
 ```bash
 sudo apt install -y postgresql
+```
 
-Note! you will face a problem. if you want to use '@' sign for create db password:
+#### Note! you will face a problem. if you want to use '@' sign for create db password:
 
 ```bash
 
