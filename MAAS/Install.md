@@ -15,10 +15,10 @@ sudo apt install -y postgresql
 
 ```bash
 
-$MAAS_DBUSER = maasuser
-$MAAS_DBPASS = 123456
-$MAAS_DBNAME = maasdb
-$HOSTNAME = localhost
+MAAS_DBUSER=maasuser
+MAAS_DBPASS=123456
+MAAS_DBNAME=maasdb
+HOSTNAME=localhost
 
 ```
 
