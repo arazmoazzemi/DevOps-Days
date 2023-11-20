@@ -15,7 +15,7 @@ redis-cli
 
 ---
 
-- check Redis connectivity
+- check Redis connectivity:
 ```bash
 PING 
 ```
