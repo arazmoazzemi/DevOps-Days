@@ -16,7 +16,7 @@ virt-install \
 
 Set static ip address:
 
-___Use vi or nano for edit network interfave___
+___Use vi or nano for edit network interface:___
 
 ```bash
 yum install nano
