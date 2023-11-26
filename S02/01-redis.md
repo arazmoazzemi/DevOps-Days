@@ -547,7 +547,7 @@ persist reserve:test:x72jsh72
 ```
 
 #### TYPE
-``bash
+```bash
 set class
 type class
 ```
