@@ -1,0 +1,30 @@
+#### https://github.com/netbox-community/netbox-docker
+
+git clone https://github.com/netbox-community/netbox-docker.git
+
+cd netbox-docker
+
+-------------------------
+touch docker-compose.override.yml
+
+version: '3.6.5'
+services:
+  netbox:
+    ports:
+    - 8000:8080
+
+------------------------------
+
+docker compose pull
+
+docker compose up
+
+
+
+
+# To create the first admin user run this command:
+docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
+
+
+
+docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
