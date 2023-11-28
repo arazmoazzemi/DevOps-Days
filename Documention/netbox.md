@@ -32,8 +32,7 @@ docker compose up
 
 #### To create the first admin user run this command:
 
+```bash
 docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
 
-
-
-docker compose exec netbox /opt/netbox/netbox/manage.py createsuperuser
+```
