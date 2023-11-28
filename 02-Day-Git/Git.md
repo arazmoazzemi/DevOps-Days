@@ -11,7 +11,7 @@ git --version
 #### [Download gitkraken for windows](https://www.gitkraken.com/download/windows64)
 
 
-
+```bash
 mkdir test-project
 ls
 
@@ -19,14 +19,13 @@ cd test-project
 
 code .
 
-
 file1.txt
 
 hi my firs line
 
-
-
 git init
+
+```
 
 
 # Git
