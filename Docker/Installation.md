@@ -47,7 +47,7 @@ cat ~/my_password.txt | docker login --username arazcode --password-stdin
 
 # OR
 
-docker login -u arazcode -p danial123
+docker login -u <Your username> -p <Your password>
 ```
 
 - Get docker images
