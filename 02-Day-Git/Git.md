@@ -6,9 +6,9 @@
 git --version
 ```
 
-#### GUI Link
+#### [GUI Clients Link](https://git-scm.com/downloads/guis)
 
-#### https://git-scm.com/downloads/guis
+#### 
 
 Download
 
