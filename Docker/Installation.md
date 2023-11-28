@@ -68,7 +68,7 @@ docker ps -a
 ```
 
 - stop container
-bash```
+```bash
 docker stop {CONTAINER ID} or {NAMES}
 docker stop ac6c83fcfd73
 docker stop zealous_bardeen
