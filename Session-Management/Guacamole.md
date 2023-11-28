@@ -50,9 +50,10 @@ sudo mv /etc/init/ssh.conf /etc/init/ssh.conf.back
 sudo systemctl restart ssh
 ```
 
-
+```bash
 wget https://github.com/Zer0CoolX/guacamole-customize-loginscreen-extension/raw/master/branding.jar 
 /opt/bitnami/guacamole/extensions/
+```
 
 ----
 
