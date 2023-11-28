@@ -8,11 +8,9 @@ git --version
 
 #### [GUI Clients Link](https://git-scm.com/downloads/guis)
 
-#### 
+#### [Download gitkraken for windows](https://www.gitkraken.com/download/windows64)
 
-Download
 
-gitkraken
 
 mkdir test-project
 ls
