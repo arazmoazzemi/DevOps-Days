@@ -1,12 +1,17 @@
-[Link](https://github.com/netbox-community/netbox-docker)
+
+
+#### [Link](https://github.com/netbox-community/netbox-docker)
 
 ```bash
 git clone https://github.com/netbox-community/netbox-docker.git
 ```
 
+```bash
 cd netbox-docker
+```
 
--------------------------
+```bash
+
 touch docker-compose.override.yml
 
 version: '3.6.5'
@@ -15,12 +20,13 @@ services:
     ports:
     - 8000:8080
 
-------------------------------
+```
+```bash
 
 docker compose pull
 
 docker compose up
-
+```
 
 
 
