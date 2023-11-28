@@ -31,7 +31,7 @@ git init
 #### Git
 #### {01-working directory, 02-Staging Area, 03-Git Repository}
 
-
+bash```
 Add -----> commit
 
 
@@ -46,7 +46,7 @@ git add file1.txt
 
 
 git commit -m "file1 added"
-
+```
 
 
 
