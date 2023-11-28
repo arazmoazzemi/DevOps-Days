@@ -1,6 +1,8 @@
-#### https://github.com/netbox-community/netbox-docker
+#### https://github.com/netbox-community/netbox-docker:
 
+```bash
 git clone https://github.com/netbox-community/netbox-docker.git
+```
 
 cd netbox-docker
 
