@@ -14,7 +14,6 @@ sudo apt install -y postgresql
 #### Note! you will face a problem. if you want to use '@' sign for create db password:
 
 ```bash
-
 MAAS_DBUSER=maasuser
 MAAS_DBPASS=123456
 MAAS_DBNAME=maasdb
