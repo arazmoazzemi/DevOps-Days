@@ -12,6 +12,7 @@ virt-install \
   --graphics none \
   --noautoconsole \
 ```
+
 ----
 
 Set static ip address:
