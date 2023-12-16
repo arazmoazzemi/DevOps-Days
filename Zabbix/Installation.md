@@ -35,6 +35,7 @@ ONBOOT="yes"
 PEERDNS=no
 
 
+```bash
 systemctl restart network
 ```
 
