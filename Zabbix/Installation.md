@@ -33,7 +33,7 @@ DNS2=1.1.1.1
 DEVICE=eth0
 ONBOOT="yes"
 PEERDNS=no
-
+```
 
 ```bash
 systemctl restart network
