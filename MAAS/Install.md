@@ -6,7 +6,7 @@ sudo snap install --channel=3.4 maas
 sudo systemctl disable --now systemd-timesyncd
 ```
 
-
+### Install postgresql
 ```bash
 sudo apt install -y postgresql
 ```
