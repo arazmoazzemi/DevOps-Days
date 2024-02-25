@@ -48,6 +48,23 @@ sudo maas createadmin
 ```
 
 
+### Install with APT:
+
+```
+sudo apt-add-repository ppa:maas/3.4
+
+sudo apt install maas
+
+sudo maas init
+
+```
+
+
+
+
+
+
+
 
 
 
