@@ -21,26 +21,18 @@ HOSTNAME=localhost
 
 ```
 
+Create PostgreSQL user and Create the MAAS database::
+
 ```bash
 sudo -i -u postgres psql -c "CREATE USER \"maasuser\" WITH ENCRYPTED PASSWORD '123456'"
 sudo -i -u postgres createdb -O "maasuser" "maasdb"
 
 
+
+```
 sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
 ```
 
-
-Create PostgreSQL user:
-```bash
-sudo -i -u postgres psql -c "CREATE USER \"$MAAS_DBUSER\" WITH ENCRYPTED PASSWORD '$MAAS_DBPASS'"
-```
-
-
-Create the MAAS database:
-```bash
-sudo -i -u postgres createdb -O "$MAAS_DBUSER" "$MAAS_DBNAME"
-sudo maas init region+rack --database-uri "postgres://$MAAS_DBUSER:$MAAS_DBPASS@$HOSTNAME/$MAAS_DBNAME"
-```
 
 ```bash
 sudo maas status
