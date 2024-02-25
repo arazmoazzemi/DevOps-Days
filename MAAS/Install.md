@@ -28,7 +28,7 @@ sudo -i -u postgres psql -c "CREATE USER \"maasuser\" WITH ENCRYPTED PASSWORD '1
 sudo -i -u postgres createdb -O "maasuser" "maasdb"
 ```
 
-MASS init
+### MASS init
 ```
 sudo maas init region+rack --database-uri "postgres://maasuser:123456@localhost/maasdb"
 ```
