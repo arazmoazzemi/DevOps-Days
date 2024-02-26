@@ -56,7 +56,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 sudo apt-add-repository ppa:maas/3.4
 
-sudo apt install maas
+sudo apt install maas -y
 
 sudo maas init
 
