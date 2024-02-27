@@ -62,7 +62,17 @@ sudo maas init
 
 ```
 
+---
+
 ### KVM
+
+### Power parameters for KVM in MaaS CLI 
+
+```
+https://maas.cloud.cbh.kth.se/MAAS/docs/cli/power-management-reference.html
+```
+
+
 
 ```
 
@@ -83,7 +93,6 @@ maas login it http://192.168.31.34:5240/MAAS/api/2.0/ zJAwkVFnv286enznbE:22sJt9F
 
 
 
-### Power parameters for KVM in MaaS CLI ###    
 
 maas it machines create \
     architecture=amd64 \
