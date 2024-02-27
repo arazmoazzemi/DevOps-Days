@@ -65,6 +65,15 @@ sudo maas init
 ### KVM
 
 ```
+
+virsh -c qemu+ssh://root@192.168.31.33/system list --all
+
+
+
+
+
+
+
 maas login it http://192.168.31.34:5240/MAAS/api/2.0/ 
 zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
 
