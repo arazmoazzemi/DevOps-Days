@@ -81,7 +81,9 @@ zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
 
 maas login it http://192.168.31.34:5240/MAAS/api/2.0/ zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
 
-    
+
+
+### Power parameters for KVM in MaaS CLI ###    
 
 maas it machines create \
     architecture=amd64 \
