@@ -95,6 +95,7 @@ maas login it http://192.168.31.34:5240/MAAS/api/2.0/ zJAwkVFnv286enznbE:22sJt9F
 
 
 maas it machines create \
+    hostname=ubuntu \
     architecture=amd64 \
     mac_addresses=52:54:00:15:36:f2 \
     power_type=virsh \
