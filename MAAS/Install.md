@@ -70,6 +70,7 @@ sudo maas init
 
 ```
 https://maas.cloud.cbh.kth.se/MAAS/docs/cli/power-management-reference.html
+https://ubuntu-on-big-iron.blogspot.com/2019/08/maas-kvm-on-s390x-part1.html
 ```
 
 
