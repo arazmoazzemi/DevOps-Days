@@ -78,17 +78,7 @@ https://maas.cloud.cbh.kth.se/MAAS/docs/cli/power-management-reference.html
 
 virsh -c qemu+ssh://root@192.168.31.33/system list --all
 
-
-
-
-
-
-
-maas login it http://192.168.31.34:5240/MAAS/api/2.0/ 
-zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
-
-
-
+maas login <maas_user> http://192.168.31.34:5240/MAAS/api/2.0/ <api_key>
 maas login it http://192.168.31.34:5240/MAAS/api/2.0/ zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
 
 
@@ -101,7 +91,7 @@ maas it machines create \
     power_type=virsh \
     power_parameters_power_id=02d7f9cb-efae-4347-8b78-04d0f9e61fde3 \
     power_parameters_power_address=qemu+ssh://it@192.168.31.33/system \
-    power_parameters_power_pass=xxxxxxxx
+    power_parameters_power_pass=<api_key>
 ```
 
 
