@@ -89,7 +89,7 @@ maas it machines create \
     power_type=virsh \
     power_parameters_power_id=02d7f9cb-efae-4347-8b78-04d0f9e61fde3 \
     power_parameters_power_address=qemu+ssh://it@192.168.31.33/system \
-    power_parameters_power_pass=<api_key>
+    power_parameters_power_pass=******
 ```
 
 
