@@ -93,7 +93,33 @@ maas it machines create \
 ```
 
 
+Proxmox power type example:
+```
+Power type
+Proxmox
 
+Proxmox host name or IP
+192.168.200.10
+
+Proxmox username, including realm
+root@pam
+
+Proxmox password, required if a token name and secret aren't given
+*******
+
+Proxmox API token name
+—
+
+Proxmox API token secret
+—
+
+Node ID
+node02
+
+Verify SSL connections with system CA certificates
+No
+
+```
 
 
 
