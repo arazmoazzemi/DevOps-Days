@@ -113,6 +113,7 @@ Proxmox API token name
 Proxmox API token secret
 —
 
+# VM name on proxmox
 Node ID
 node02
 
