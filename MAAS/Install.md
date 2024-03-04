@@ -79,7 +79,7 @@ https://ubuntu-on-big-iron.blogspot.com/2019/08/maas-kvm-on-s390x-part1.html
 virsh -c qemu+ssh://root@192.168.31.33/system list --all
 
 maas login <maas_user> http://192.168.31.34:5240/MAAS/api/2.0/ <api_key>
-maas login it http://192.168.31.34:5240/MAAS/api/2.0/ zJAwkVFnv286enznbE:22sJt9FyGdvXgMYQ6q:W7xCqdcuAPr4RQ2bu8J5Eq2vjsceFw9N
+maas login it http://192.168.31.34:5240/MAAS/api/2.0/ V6R34MrmuTY2aTffAj:N9CuHV4X6PbNZkP8NQ:La3ZzMu27dcG2bmxUdUtgbnK5D5YZYfU
 
 
 maas it machines create \
