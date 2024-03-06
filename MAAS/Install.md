@@ -188,7 +188,10 @@ sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
 ```
 ----
 
+Set an ip address for bridge network
+
 https://maas.io/docs/managing-vm-hosts
+
 
 Set up libvirt SSH (3.3,3.4 snap)
 If you installed MAAS via snap, then create the needed SSH keys this way:
