@@ -122,9 +122,67 @@ No
 
 ```
 
+```
+
+sudo chsh -s /bin/bash maas  
+sudo su - maas  
+ssh-keygen -f ~/.ssh/id_rsa -N ''  
+logout  
+sudo cat ~maas/.ssh/id_rsa.pub | tee -a ~/.ssh/authorized_keys
+With the keys in place, let’s test our connection to the local hypervisor:
+
+sudo -H -u maas \
+    bash -c 'virsh -c qemu+ssh://ubuntu@192.168.30.1/system list --all'
 
 
 
+
+# If you installed MAAS via snap, then create the needed SSH keys this way:
+
+Set up libvirt SSH (3.3,3.4 snap)
+
+sudo mkdir -p /var/snap/maas/current/root/.ssh
+cd /var/snap/maas/current/root/.ssh
+sudo ssh-keygen -f id_rsa
+
+
+
+nano /etc/libvirt/libvirtd.conf
+
+
+unix_sock_group = "libvirt"
+unix_sock_rw_perms = "0770"
+auth_unix_rw = "none"
+
+
+sudo nano /etc/libvirt/qemu.conf
+user = "oneadmin"
+group = "kvm"
+
+sudo systemctl restart libvirtd
+
+
+
+
+sudo -H -u maas \
+bash -c 'virsh -c qemu+ssh://it@192.168.200.15/system list --all'
+
+
+
+
+sudo maas it machines create \
+    hostname=ubuntu \
+    architecture=amd64 \
+    mac_addresses=52:54:00:b1:b6:bd \
+    power_type=virsh \
+    power_parameters_power_id=2ff77996-e092-4bff-a2ac-15890d0167db \
+    power_parameters_power_address=qemu+ssh://it@192.168.200.15/system 
+    
+
+https://discourse.maas.io/t/maas-virsh-power-type-power-error/7913/2
+sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
+
+```
 
 
 
