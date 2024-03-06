@@ -186,6 +186,20 @@ https://discourse.maas.io/t/maas-virsh-power-type-power-error/7913/2
 sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
 
 ```
+----
+Set up libvirt SSH (3.3,3.4 snap)
+If you installed MAAS via snap, then create the needed SSH keys this way:
+
+
+
+sudo mkdir -p /var/snap/maas/current/root/.ssh
+cd /var/snap/maas/current/root/.ssh
+sudo ssh-keygen -f id_rsa
+
+sudo nano /etc/libvirt/qemu.conf
+user = "it"
+group = "kvm"
+
 
 
 
