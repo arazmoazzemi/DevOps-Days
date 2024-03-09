@@ -187,7 +187,7 @@ sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
 
 ```
 ----
-
+```
 Set an ip address for bridge network
 
 https://maas.io/docs/managing-vm-hosts
@@ -205,6 +205,8 @@ sudo ssh-keygen -f id_rsa
 sudo nano /etc/libvirt/qemu.conf
 user = "it"
 group = "kvm"
+```
+
 
 ----
 # Network defination example:
