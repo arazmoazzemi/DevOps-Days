@@ -206,6 +206,35 @@ sudo nano /etc/libvirt/qemu.conf
 user = "it"
 group = "kvm"
 
+----
+# Network defination example:
+```
+network:
+  version: 2
+  ethernets:
+    ens32:
+      addresses:
+      - 192.168.200.15/24
+      nameservers:
+        addresses:
+        - 8.8.8.8
+        search: []
+      routes:
+      - to: default
+        via: 192.168.200.2
+    ens33:
+      optional:
+        true
+      dhcp4: false
+      dhcp6: false
 
+  bridges:
+    virbr0:
+      interfaces:
+        - ens33
+      addresses:
+      - 192.168.100.1/24  # Adjust the IP address and subnet as needed
+
+```
 
 
