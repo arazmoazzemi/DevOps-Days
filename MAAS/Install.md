@@ -273,4 +273,13 @@ network:
 
 ```
 
+### Network define
+```
+nano /etc/libvirt/qemu/networks/vmbr0.xml
 
+<network>
+  <name>virbr0</name>
+  <forward mode="bridge"/>
+  <bridge name="virbr0" />
+</network>
+```
