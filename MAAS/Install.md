@@ -288,4 +288,8 @@ nano /etc/libvirt/qemu/networks/vmbr0.xml
   <forward mode="bridge"/>
   <bridge name="virbr0" />
 </network>
+
+virsh net-define --validate --file virbr0.xml
+virsh net-start --network virbr0
+
 ```
