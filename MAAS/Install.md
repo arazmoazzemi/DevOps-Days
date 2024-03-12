@@ -274,7 +274,13 @@ network:
 ```
 
 ### Network define
-```
+```bash
+brct addbr virbr0
+
+cd /etc/libvirt/qemu/networks
+touch virbr0.xml
+
+
 nano /etc/libvirt/qemu/networks/vmbr0.xml
 
 <network>
