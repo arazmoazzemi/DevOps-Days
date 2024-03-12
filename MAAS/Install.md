@@ -291,5 +291,6 @@ nano /etc/libvirt/qemu/networks/vmbr0.xml
 
 virsh net-define --validate --file virbr0.xml
 virsh net-start --network virbr0
+virsh net-autostart --network virbr0
 
 ```
