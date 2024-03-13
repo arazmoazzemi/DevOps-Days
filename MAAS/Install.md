@@ -210,9 +210,9 @@ group = "kvm"
 
 ----
 
-# TEST
+# OK -------------------->>> YOU just bug fix
 ```
-Set up libvirt SSH (3.3,3.4 snap)
+[Set up libvirt SSH (3.3,3.4 snap)
 
 sudo mkdir -p /var/snap/maas/current/root/.ssh
 cd /var/snap/maas/current/root/.ssh
@@ -239,7 +239,30 @@ sudo maas it machines create \
     mac_addresses=52:54:00:c5:d4:86 \
     power_type=virsh \
     power_parameters_power_id=91d1cc78-7bd5-4f83-b84c-db8cec522080 \
-    power_parameters_power_address=qemu+ssh://it@192.168.200.15/system 
+    power_parameters_power_address=qemu+ssh://it@192.168.200.15/system ](https://discourse.maas.io/t/maas-virsh-power-type-power-error/7913/2
+sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
+
+
+API key:
+cwuEJsZAbxbvMxwMxH:fYfL37gcrtEnNRNPMM:NtNWzr55ND5Ay2DdDUrM8LCvf9kW72HK
+
+maas login it http://192.168.200.15:5240/MAAS/api/2.0/ cwuEJsZAbxbvMxwMxH:fYfL37gcrtEnNRNPMM:NtNWzr55ND5Ay2DdDUrM8LCvf9kW72HK
+
+
+sudo mkdir -p /var/snap/maas/current/root/.ssh
+cd /var/snap/maas/current/root/.ssh
+sudo ssh-keygen -f id_rsa
+sudo cat /var/snap/maas/current/root/.ssh/id_rsa.pub | tee -a ~/.ssh/authorized_keys
+
+
+
+maas it machines create \
+    hostname=ubuntu \
+    architecture=amd64 \
+    mac_addresses=52:54:00:be:09:15 \
+    power_type=virsh \
+    power_parameters_power_id=54dc45aa-1a1a-409a-947d-c587e3496f99 \
+    power_parameters_power_address=qemu+ssh://it@192.168.200.15/system )
 ```
 
 
