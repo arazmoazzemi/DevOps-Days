@@ -3,6 +3,10 @@
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 sudo snap install --channel=3.3 maas
+sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
+
+snap info maas | awk '/^installed:/ {print $2}'
+
 sudo systemctl disable --now systemd-timesyncd
 ```
 
