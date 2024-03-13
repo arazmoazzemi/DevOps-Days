@@ -2,7 +2,7 @@
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-sudo snap install --channel=3.4 maas
+sudo snap install --channel=3.3 maas
 sudo systemctl disable --now systemd-timesyncd
 ```
 
