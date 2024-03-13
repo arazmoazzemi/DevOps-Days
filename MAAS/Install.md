@@ -1,4 +1,4 @@
-## Install Bare Metal As A Service(MASS-3.3):
+## Install Bare Metal As A Service(MASS-3.3) and bug fix for kvm power:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
