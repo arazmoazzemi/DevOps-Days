@@ -86,7 +86,7 @@ echo $CLASS
 ---
 ### Env variables , Local variables, Shell variables:
 ---
-
+---
 
 ## Passing variables from one process to child processes
 
@@ -105,9 +105,6 @@ python3 test.py
 ```bash
 touch test.py
 ```
-```bash
-./test.sh
-```
 ```python
 
 #!/usr/bin/python3
@@ -116,8 +113,12 @@ from os import environ
 
 print(environ.get("CLASS", "NONE"))
 ```
+### Call process:
+```bash
+./test.sh
+```
 
-
+---
 
 
 
