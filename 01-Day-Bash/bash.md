@@ -89,6 +89,11 @@ echo $CLASS
 
 
 ## Passing variables from one process to child processes
+
+```bash
+```
+touch test.sh
+```
 ```bash
 #!/usr/bin/bash
 
@@ -98,7 +103,9 @@ echo $CLASS
 
 python3 test.py
 ```
-
+```bash
+touch test.py
+```
 ```python
 
 #!/usr/bin/python3
