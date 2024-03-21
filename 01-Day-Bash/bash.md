@@ -69,6 +69,21 @@ CLASS="DevOps"
 echo $CLASS
 
 ```
+UNSET vlaues:
+```
+#!/usr/bin/bash
+
+set -e
+
+CLASS="Hello Devops!"
+
+unset CLASS
+
+echo $CLASS
+
+```
+
+
 
 ##### **Change input vlaues to string with _**<$*>**_**
 
