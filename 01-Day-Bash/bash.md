@@ -6,7 +6,7 @@ __Example of ($ and Input) variables__
 touch test.sh
 ```
 ```bash
-#! ---> shebang
+#! ---> shebang for communicate with interpreters
 chmod +x ---> execute permission
 ```
 ```
