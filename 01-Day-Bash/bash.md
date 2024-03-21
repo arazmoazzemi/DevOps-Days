@@ -174,8 +174,15 @@ NAMES=(ARAZ AREZOU ROSA)
 echo ${#NAMES[@]}
 
 ```
+```
+#!/usr/bin/bash
+
+IPS=($(hostname -i))
+
+echo ${IPS[1a]}
 
 
+```
 
 
 
