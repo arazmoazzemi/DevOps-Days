@@ -9,7 +9,10 @@ touch test.sh
 #! ---> shebang
 chmod +x ---> execute permission
 ```
-
+```
+touch test.sh
+chmod +x test.sh
+```
 ```bash
 #!/usr/bin/bash
 CLASS="Hello DevOps!"
