@@ -98,8 +98,9 @@ echo $CLASS
 
 python3 test.py
 ```
+
 ```python
-```
+
 #!/usr/bin/python3
 
 from os import environ
