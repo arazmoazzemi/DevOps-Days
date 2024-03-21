@@ -179,7 +179,7 @@ echo ${#NAMES[@]}
 
 IPS=($(hostname -i))
 
-echo ${IPS[1a]}
+echo ${IPS[1]}
 
 
 ```
