@@ -166,7 +166,14 @@ NAMES[2]="CHANGED"
 echo ${NAMES[2]}
 
 ```
+```
+#!/usr/bin/bash
 
+NAMES=(ARAZ AREZOU ROSA)
+
+echo ${#NAMES[@]}
+
+```
 
 
 
