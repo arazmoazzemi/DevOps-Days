@@ -149,17 +149,28 @@ els
 fi
 ```
 
+### Define arrays:
+```
+touch test.sh
+```
+```
+#!/usr/bin/bash
+
+NAMES=(ARAZ AREZOU ROSA)
+
+echo $NAMES
+echo ${NAMES[1]}
+echo ${NAMES[2]}
+
+NAMES[2]="CHANGED"
+echo ${NAMES[2]}
+
+```
 
 
 
 
 
-##### **Change input vlaues to string with _**<$*>**_**
 
-
-##### **Change input Values to string with _**<$@>**_**
-
-
-##### **Exit Code with _**$?**_**
 
 
