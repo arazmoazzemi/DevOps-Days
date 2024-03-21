@@ -133,7 +133,20 @@ Special Variable	Description
 #### $$	Gets the process ID of the current shell.
 #### $-	It will print the current set of options in your current shell.
 ---
+## Example:
+```
+#!/usr/bin/bash
 
+which docker &>  /dev/null
+
+if [[ $? -eq 0 ]]; then
+    echo "Docker cli is installed."
+els
+    echo "Docker cli is not installed. "
+fi
+
+
+```
 
 
 
