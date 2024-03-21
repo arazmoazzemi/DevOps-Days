@@ -34,6 +34,21 @@ CLASS="Hello DevOps!"
 echo $CLASS
 ```
 
+### Readonly:
+```bash
+#!/usr/bin/bash
+
+CLASS="Hello Devops!"
+
+readonly CLASS
+
+echo $CLASS
+
+CLASS="DevOps"
+
+echo CLASS
+
+```
 
 
 ##### **Change input vlaues to string with _**<$*>**_**
