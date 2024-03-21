@@ -18,8 +18,16 @@ chmod +x test.sh
 CLASS="Hello DevOps!"
 echo $CLASS
 ```
+---
+### In Bash, you can name variables using your desired names; however, there are certain conditions and constraints for variable naming. Here are some of these conditions:
 
-
+### Variable names must start with a letter or underscore (_).
+### Variable names can only contain uppercase and lowercase English letters, digits, and underscores (_).
+#### Variable names are case-sensitive. In other words, variables named "Var" and "var" are considered different.
+### Variable names should not conflict with Bash keywords. For example, names like "if" or "while" are not allowed.
+### It's recommended to avoid using uppercase letters in variable names since system variables are typically named in uppercase, which might lead to conflicts.
+### In general, it's advisable to name variables in Bash in a logical and understandable manner, avoiding conflicts with other names.
+---
 
 
 
