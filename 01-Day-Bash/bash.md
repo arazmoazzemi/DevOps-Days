@@ -19,6 +19,8 @@ CLASS="Hello DevOps!"
 echo $CLASS
 ```
 ---
+### a-z A-Z 0-9 _
+
 ### In Bash, you can name variables using your desired names; however, there are certain conditions and constraints for variable naming. Here are some of these conditions:
 
 ### Variable names must start with a letter or underscore (_).
