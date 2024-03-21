@@ -88,6 +88,14 @@ echo $CLASS
 ---
 
 
+## Passing variables from one process to child processes
+```
+#!/usr/bin/bash
+
+CLASS="Hello DevOps!"
+
+bash -c "echo $CLASS"
+```
 
 
 
