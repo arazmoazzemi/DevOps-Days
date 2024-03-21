@@ -135,6 +135,9 @@ Special Variable	Description
 ---
 ## Example:
 ```
+touch test.sh
+```
+```
 #!/usr/bin/bash
 
 which docker &>  /dev/null
@@ -144,8 +147,6 @@ if [[ $? -eq 0 ]]; then
 els
     echo "Docker cli is not installed. "
 fi
-
-
 ```
 
 
