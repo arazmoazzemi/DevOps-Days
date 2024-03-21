@@ -83,6 +83,22 @@ echo $CLASS
 
 ```
 
+---
+### Env variables , Local variables, Shell variables:
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##### **Change input vlaues to string with _**<$*>**_**
