@@ -5,6 +5,10 @@ __Example of ($ and Input) variables__
 ```
 touch test.sh
 ```
+```bash
+#! ---> shebang
+chmod +x ---> execute permission
+```
 
 ```bash
 #!/usr/bin/bash
