@@ -46,7 +46,7 @@ echo $CLASS
 
 CLASS="DevOps"
 
-echo CLASS
+echo $CLASS
 
 ```
 
