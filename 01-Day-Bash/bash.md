@@ -13,11 +13,7 @@ chmod +x ---> execute permission
 touch test.sh
 chmod +x test.sh
 ```
-```bash
-#!/usr/bin/bash
-CLASS="Hello DevOps!"
-echo $CLASS
-```
+
 ---
 ### a-z A-Z 0-9 _
 ## Imprtant : Variables should not start with a number.
@@ -32,7 +28,11 @@ echo $CLASS
 ### In general, it's advisable to name variables in Bash in a logical and understandable manner, avoiding conflicts with other names.
 ---
 
-
+```bash
+#!/usr/bin/bash
+CLASS="Hello DevOps!"
+echo $CLASS
+```
 
 
 
