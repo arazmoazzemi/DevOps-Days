@@ -49,7 +49,26 @@ CLASS="DevOps"
 echo $CLASS
 
 ```
+### Command set -e:
+## Non-zero exit status
 
+```bash 
+#!/usr/bin/bash
+
+set -e
+
+CLASS="Hello Devops!"
+
+readonly CLASS
+
+echo $CLASS
+
+
+CLASS="DevOps"
+
+echo $CLASS
+
+```
 
 ##### **Change input vlaues to string with _**<$*>**_**
 
