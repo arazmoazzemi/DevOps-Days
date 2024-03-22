@@ -19,7 +19,7 @@ git init
 
 ```
 ### Add 3 files into ./git folder
-### (opensource lincense)[https://opensource.org/licenses]
+### [opensource lincense](https://opensource.org/licenses)
 ```bash
 cd .git/
 
