@@ -46,7 +46,7 @@ git add .
 git status
 ```
 ```
-git resore --staged
+git restore --staged
 ```
 
 
