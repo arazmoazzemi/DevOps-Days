@@ -24,7 +24,7 @@ git init
 cd .git/
 
 touch .gitignore
-touch readme.md
+touch README.md
 touch LICENSE
 
 ```
