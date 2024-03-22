@@ -75,8 +75,9 @@ git push
 git reset HEAD~1 --hard
 
 ```
-
-
+```
+git fetch
+```
 
 
 
