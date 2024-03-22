@@ -337,4 +337,61 @@ A=''
 echo $?
 ```
 
+### Cheack type of ststem files:
 
+
+Regular Files (-):
+
+These are regular files containing data (e.g., text files, binary executables, etc.).
+Displayed as a hyphen (-) when using the ls -l command.
+Directories (d):
+
+These are files that contain other files and directories.
+Displayed as d when using the ls -l command.
+Symbolic Links (l):
+
+These are files that point to another file or directory.
+Displayed as l when using the ls -l command, with the link target shown.
+Block Devices (b):
+
+These are files that provide buffered input/output access to a device.
+Commonly used for storage devices like hard drives and SSDs.
+Displayed as b when using the ls -l command.
+Character Devices (c):
+
+These are files that provide unbuffered input/output access to a device.
+Commonly used for devices like terminals, serial ports, and sound cards.
+Displayed as c when using the ls -l command.
+Named Pipes or FIFOs (p):
+
+These are files used for inter-process communication (IPC).
+Data written to a named pipe by one process can be read by another process.
+Displayed as p when using the ls -l command.
+Sockets (s):
+
+These are files used for inter-process communication (IPC) between processes on the same host or different hosts.
+Used by network applications for communication.
+Displayed as s when using the ls -l command.
+Unix Domain Sockets (S):
+
+These are similar to sockets but used for communication between processes on the same host only.
+Displayed as S when using the ls -l command.
+Whiteout Files (w):
+
+These are special files used in union file systems to mark deleted or hidden files.
+Displayed as w when using the ls -l command.
+These file types are identified by the first character in the file permission field when using the ls -l command. Understanding these file types can be useful for managing and working with files in a Linux environment.
+
+
+### Check block device file:
+
+```bash
+
+#!/usr/bin/bash
+
+[[ -b /dev/zram0 ]]
+
+echo $?
+
+
+```
