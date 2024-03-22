@@ -326,6 +326,15 @@ fi
 ! [ -f file.txt ] && echo "File does not exist"
 ```
 
+### Check, Is string empty:
+```bash
+#!/usr/bin/bash
 
+A=''
+
+[[ -z $A ]]
+
+echo $?
+```
 
 
