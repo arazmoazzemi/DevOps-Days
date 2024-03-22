@@ -70,7 +70,11 @@ git push
 
 ```
 
+### Remove commits 
+```
+git reset HEAD~1 --hard
 
+```
 
 
 
