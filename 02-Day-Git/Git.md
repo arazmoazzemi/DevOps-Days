@@ -48,7 +48,9 @@ git status
 ```
 git restore --staged
 ```
-
+```
+git commit -m "update readme"
+```
 
 
 
