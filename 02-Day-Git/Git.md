@@ -1,8 +1,7 @@
- Git VCS
-
-* After install git
+ ## Git
 
 ```bash
+apt-get install git
 git --version
 ```
 
@@ -13,17 +12,12 @@ git --version
 
 ```bash
 mkdir test-project
-ls
 
 cd test-project
 
-code .
-
-file1.txt
-
-hi my firs line
-
 git init
+
+
 
 ```
 
