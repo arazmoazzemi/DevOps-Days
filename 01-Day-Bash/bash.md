@@ -326,7 +326,7 @@ fi
 ! [ -f file.txt ] && echo "File does not exist"
 ```
 
-### Check, Is string empty:
+### Check, Is the string empty:
 ```bash
 #!/usr/bin/bash
 
