@@ -21,6 +21,7 @@ git init
 ### Add 3 files into ./git folder
 ### [opensource lincense](https://opensource.org/licenses)
 ### [Choose a license](https://choosealicense.com/)
+### [Gitignore](https://github.com/github/gitignore)
 ```bash
 cd .git/
 
