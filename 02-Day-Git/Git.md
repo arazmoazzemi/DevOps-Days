@@ -57,8 +57,14 @@ git diff HEAD
 ```
 ```
 git clone https://github.com/arazmoazzemi/DevOps-Days.git
+
+git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+
 git log
 git remote show
+
+git pull -v
+git pull
 ```
 
 
@@ -71,4 +77,3 @@ git remote show
 
 
 
-  
