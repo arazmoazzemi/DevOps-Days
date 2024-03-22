@@ -34,6 +34,9 @@ git add .
 
 git commit -m "initial commit"
 
+git status
+
+git log
 ```
 
 
