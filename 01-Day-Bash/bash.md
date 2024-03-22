@@ -199,4 +199,48 @@ echo $RESULT
 
 ```
 
+### Using expr Command:
+```
+# Addition
+result=$(expr 5 + 3)
+echo $result   # Output: 8
 
+# Subtraction
+result=$(expr 10 - 4)
+echo $result   # Output: 6
+
+# Multiplication
+result=$(expr 6 \* 7)   # Note: * needs to be escaped or quoted
+echo $result   # Output: 42
+
+# Division
+result=$(expr 20 / 4)
+echo $result   # Output: 5
+```
+
+### Using Arithmetic Expansion:
+```
+# Addition
+result=$((5 + 3))
+echo $result   # Output: 8
+
+# Subtraction
+result=$((10 - 4))
+echo $result   # Output: 6
+
+# Multiplication
+result=$((6 * 7))
+echo $result   # Output: 42
+
+# Division
+result=$((20 / 4))
+echo $result   # Output: 5
+
+# Modulus (Remainder)
+result=$((20 % 3))
+echo $result   # Output: 2
+
+# Exponentiation
+result=$((2 ** 3))
+echo $result   # Output: 8
+```
