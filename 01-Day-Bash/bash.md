@@ -255,3 +255,62 @@ let A++
 echo $A
 ```
 
+### In Bash, there are six relational operators for number comparison:
+
+#### Equal to (-eq): Checks if two numbers are equal.
+
+```bash
+if [ "$num1" -eq "$num2" ]; then
+    echo "$num1 is equal to $num2"
+fi
+```
+
+
+#### Not equal to (-ne): Checks if two numbers are not equal.
+
+```bash
+if [ "$num1" -ne "$num2" ]; then
+    echo "$num1 is not equal to $num2"
+fi
+```
+
+#### Greater than (-gt): Checks if the first number is greater than the second number.
+
+```bash
+if [ "$num1" -gt "$num2" ]; then
+    echo "$num1 is greater than $num2"
+fi
+```
+
+#### Greater than or equal to (-ge): Checks if the first number is greater than or equal to the second number.
+
+```bash
+if [ "$num1" -ge "$num2" ]; then
+    echo "$num1 is greater than or equal to $num2"
+fi
+```
+
+#### Less than (-lt): Checks if the first number is less than the second number.
+
+```bash
+if [ "$num1" -lt "$num2" ]; then
+    echo "$num1 is less than $num2"
+fi
+```
+
+#### Less than or equal to (-le): Checks if the first number is less than or equal to the second number.
+
+```bash
+if [ "$num1" -le "$num2" ]; then
+    echo "$num1 is less than or equal to $num2"
+fi
+```
+
+
+
+
+
+
+
+
+
