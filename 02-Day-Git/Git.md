@@ -55,7 +55,11 @@ git commit -m "update readme"
 git reset HEAD~1
 git diff HEAD
 ```
-
+```
+git clone https://github.com/arazmoazzemi/DevOps-Days.git
+git log
+git remote show
+```
 
 
 
