@@ -244,3 +244,14 @@ echo $result   # Output: 2
 result=$((2 ** 3))
 echo $result   # Output: 8
 ```
+```
+#!/usr/bin/bash
+
+read -p "Input A: " A
+
+let A++
+# let A=A+10
+
+echo $A
+```
+
