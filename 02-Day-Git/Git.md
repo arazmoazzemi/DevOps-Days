@@ -51,7 +51,10 @@ git restore --staged.
 ```
 git commit -m "update readme"
 ```
+```
+git reset HEAD~1
 
+```
 
 
 
