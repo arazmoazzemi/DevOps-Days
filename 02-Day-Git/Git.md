@@ -53,7 +53,7 @@ git commit -m "update readme"
 ```
 ```
 git reset HEAD~1
-
+git diff HEAD
 ```
 
 
