@@ -306,10 +306,25 @@ if [ "$num1" -le "$num2" ]; then
 fi
 ```
 
+### Logical Operators:
+#### Logical AND (&&): Executes the next command if the previous command succeeded.
+#### Logical OR (||): Executes the next command if the previous command failed.
+#### Logical NOT (!): Inverts the result of the following condition.
 
+### AND (&&):
+```bash
+[ -f file.txt ] && echo "File exists"
+```
 
+### OR (||):
+```bash
+[ -d directory ] || echo "Directory does not exist"
+```
 
-
+### NOT (!):
+```bash
+! [ -f file.txt ] && echo "File does not exist"
+```
 
 
 
