@@ -28,29 +28,11 @@ cd .git/
 touch .gitignore
 touch README.md
 touch LICENSE
-
 ```
+```
+git add .
 
 
-
-#### Git
-#### {01-working directory, 02-Staging Area, 03-Git Repository}
-
-```bash
-Add -----> commit
-
-
-* vscode
-
-Ctrl + `
-
-01- working directory to staging 
-git add file1.txt
-
-02-staging to repository
-
-
-git commit -m "file1 added"
 ```
 
 
