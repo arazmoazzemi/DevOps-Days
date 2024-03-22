@@ -56,10 +56,9 @@ git reset HEAD~1
 git diff HEAD
 ```
 ### Contect local to github and push projects
+### Add id_rsa.pub to your github account
 ```
-git clone https://github.com/arazmoazzemi/DevOps-Days.git
-
-git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+git remote set-url origin git@github.com:{arazmoazzemi}/{DevOps-Days}.git
 
 git log
 git remote show
