@@ -38,7 +38,13 @@ git status
 
 git log
 ```
+```
+git diff HEAD
 
+git add .
+
+git status
+```
 
 
 
