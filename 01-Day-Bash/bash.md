@@ -184,7 +184,19 @@ echo ${IPS[1]}
 
 ```
 
+Input values:
 
+```
+#!/usr/bin/bash
 
+read -p "Input A:" A
+
+read -p "Input B:" B
+
+RESULT=`expr $A + $B`
+
+echo $RESULT
+
+```
 
 
