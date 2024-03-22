@@ -17,9 +17,18 @@ cd test-project
 
 git init
 
+```
+### Add 3 files into ./git folder
 
+```bash
+cd .git/
+
+touch .gitignore
+touch readme.md
+touch LICENSE
 
 ```
+
 
 
 #### Git
