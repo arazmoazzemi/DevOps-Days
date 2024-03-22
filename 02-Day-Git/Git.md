@@ -55,6 +55,7 @@ git commit -m "update readme"
 git reset HEAD~1
 git diff HEAD
 ```
+### Contect local to github and push projects
 ```
 git clone https://github.com/arazmoazzemi/DevOps-Days.git
 
@@ -65,6 +66,9 @@ git remote show
 
 git pull -v
 git pull
+
+git push
+
 ```
 
 
