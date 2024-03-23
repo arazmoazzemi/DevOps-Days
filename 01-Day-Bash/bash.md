@@ -501,7 +501,7 @@ if [ condition ]; then
 fi
 ```
 
-Here, the condition inside the square brackets is evaluated, and if it's true, the code inside the if block is executed.
+The condition inside the square brackets is evaluated, and if it's true, the code inside the if block is executed.
 
 [[ ]] (Bash test): This is an extended version of the "test" command available in Bash. It provides more features and is generally preferred over the traditional [ ] construct. It supports additional operators and performs more advanced pattern matching. For example:
 
@@ -521,7 +521,7 @@ It's similar to [ ], but offers more flexibility and functionality, such as patt
 ( command1; command2 )
 ```
 
-Here, command1 and command2 are executed in a subshell.
+The command1 and command2 are executed in a subshell.
 
 (( )) (Arithmetic expression): Double parentheses are used for arithmetic evaluation in Bash. They allow performing arithmetic operations and comparisons within them. For example:
 
