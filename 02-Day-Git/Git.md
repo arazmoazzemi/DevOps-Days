@@ -89,12 +89,18 @@ ls
 ```
 
 ```bash
-git checkout master
+git checkout main
 
 ls
 ```
 
+### Create a new branch
 
+```bash
+git checkout <commit ID> -b mybranch
+
+git branch
+```
 
 
 
