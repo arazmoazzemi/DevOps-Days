@@ -102,5 +102,46 @@ git checkout <commit ID> -b mybranch
 git branch
 ```
 
+### git rebase --merge prevent for time incontinence
+
+```bash
+git branch devrebase
+
+touch devrebase_file
+
+git add.
+
+git commit -m "updated withdevrebase" 
+
+git checkout main
+git rebase --merge devrebase
+
+```
+
+
+
+### Delete commit
+```bash
+git reset HEAD~1 --hard
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
