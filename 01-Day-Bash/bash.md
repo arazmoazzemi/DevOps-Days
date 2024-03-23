@@ -493,50 +493,41 @@ echo "Install..."
 
 [ ] (Posix test): This is the traditional way of testing conditions in POSIX shells, including Bash. It's also known as the "test" command. It's used for evaluating conditions and returning a true or false value. For example:
 
-bash
-
-Copy code
-
+```bash
 if [ condition ]; then
 
     # code if condition is true
 
 fi
+```
 
 Here, the condition inside the square brackets is evaluated, and if it's true, the code inside the if block is executed.
 
 [[ ]] (Bash test): This is an extended version of the "test" command available in Bash. It provides more features and is generally preferred over the traditional [ ] construct. It supports additional operators and performs more advanced pattern matching. For example:
 
-bash
-
-Copy code
-
+```bash
 if [[ condition ]]; then
 
     # code if condition is true
 
 fi
+```
 
 It's similar to [ ], but offers more flexibility and functionality, such as pattern matching and regular expressions.
 
 ( ) (Subshell): Parentheses are used to create subshells in Bash. Commands enclosed within parentheses are executed in a subshell environment. This means any changes made within the parentheses, such as variable assignments, won't affect the parent shell. For example:
 
-bash
-
-Copy code
-
+```bash
 ( command1; command2 )
+```
 
 Here, command1 and command2 are executed in a subshell.
 
 (( )) (Arithmetic expression): Double parentheses are used for arithmetic evaluation in Bash. They allow performing arithmetic operations and comparisons within them. For example:
 
-bash
-
-Copy code
-
+```bash
 (( num1 > num2 ))
-
+```
 This evaluates whether num1 is greater than num2. It's commonly used in arithmetic operations and loop conditions.
 
 Each of these constructs serves a specific purpose in Bash scripting, providing different functionalities for testing conditions, creating subshells, and evaluating arithmetic expressions.
