@@ -111,7 +111,7 @@ touch devrebase_file
 
 git add.
 
-git commit -m "updated withdevrebase" 
+git commit -m "updated with devrebase" 
 
 git checkout main
 git rebase --merge devrebase
