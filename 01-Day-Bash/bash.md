@@ -122,16 +122,17 @@ print(environ.get("CLASS", "NONE"))
 ---
 ### Special variables in bash:
 
-Special Variable	Description
-#### $0	Gets the name of the current script.
-#### $#	Gets the number of arguments passed while executing the bash script.
-#### $*	Gives you a string containing every command-line argument.
-#### $@	It stores the list of every command-line argument as an array.
-#### $1-$9	Stores the first 9 arguments.
-#### $?	Gets the status of the last command or the most recently executed process.
-#### $!	Shows the process ID of the last background command.
-#### $$	Gets the process ID of the current shell.
-#### $-	It will print the current set of options in your current shell.
+Special Variables in Bash
+Variable	Description
+$0	Name of the current script
+$#	Number of arguments passed to the script
+$*	String containing all command-line arguments
+$@	Array containing all command-line arguments
+$1-$9	Individual command-line arguments
+$?	Status of the last command or process
+$!	Process ID of the last background command
+$$	Process ID of the current shell
+$-	Current set of options in the shell
 ---
 ## Example:
 ```
