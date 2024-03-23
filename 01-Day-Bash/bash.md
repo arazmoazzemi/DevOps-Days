@@ -434,7 +434,7 @@ echo "Install..."
 
 ```
 
-### Example of positive programming
+### Example of positive condition programming
 
 ```bash
 #!/usr/bin/bash
