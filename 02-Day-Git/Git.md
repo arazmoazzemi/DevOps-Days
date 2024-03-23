@@ -79,7 +79,20 @@ git reset HEAD~1 --hard
 git fetch
 ```
 
+```bash
+git revert <commit ID>
 
+git checkout HEAD~1
+
+ls
+
+```
+
+```bash
+git checkout master
+
+ls
+```
 
 
 
