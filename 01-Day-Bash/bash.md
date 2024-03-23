@@ -395,3 +395,42 @@ echo $?
 
 
 ```
+### Simple example for check some conditions:
+
+```bash
+#!/usr/bin/bash
+set -e
+
+echo "Cheking root user..."
+
+[ $(whoami) == "root" ]
+
+echo "Root OK."
+
+echo "Checking directory..."
+
+[ -d ./x ]
+
+echo "Directory OK."
+
+echo "Checking file..."
+
+[ -f ./x/test.conf ]
+
+echo "File OK..."
+
+echo "Checking file owner..."
+
+[ -O ./x/test.conf ]
+
+echo "Owner OK."
+echo "Cheking file data..."
+
+[ -S ./x/test.conf ]
+
+echo "Not empty OK..."
+
+echo "Install..."
+
+
+```
