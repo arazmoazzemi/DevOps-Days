@@ -432,5 +432,38 @@ echo "Not empty OK..."
 
 echo "Install..."
 
+```
+
+### Example of positive programming
+
+```bash
+#!/usr/bin/bash
+
+if [ $(whoami) == "root" ]; then
+    if [ -d ./x ]; then
+        if [ -f ./x/test.conf ]; then
+            if [ -O ./x/test.conf ]; then
+                if [ -r ./x/test.conf ]; then
+                    if [ -s ./x/test.conf ]; then
+                        echo "Install ..."
+                    else
+                        echo "File is empty."
+                    fi
+                else
+                    echo "File is not readable."
+                fi
+            else
+                echo "File owner is not root."
+            fi
+        else
+            echo "Config file does not exist."
+        fi
+    else
+        echo "Directory does not exist."
+    fi
+else
+    echo "Current user is not root."
+fi
+
 
 ```
