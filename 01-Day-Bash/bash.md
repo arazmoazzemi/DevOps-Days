@@ -122,7 +122,6 @@ print(environ.get("CLASS", "NONE"))
 ---
 ### Special variables in bash:
 
-Special Variables in Bash
 | Variable | Description                                  |
 | -------- | -------------------------------------------- |
 | $0       | Name of the current script                   |
