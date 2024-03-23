@@ -467,3 +467,25 @@ fi
 
 
 ```
+
+### Example of negetive condition programming
+
+```bash
+#!/usr/bin/bash
+
+set -e
+
+if [ $(whoami) != "root"]; then
+    echo "Current user is not root."
+    false
+fi
+
+if [ ! -d ./x ]; then
+    echo "Directory is not exist."
+    false
+fi
+
+echo "Install..."
+
+
+```
