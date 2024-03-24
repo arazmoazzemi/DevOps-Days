@@ -83,6 +83,8 @@ sudo maas init
 ```
 https://maas.cloud.cbh.kth.se/MAAS/docs/cli/power-management-reference.html
 https://ubuntu-on-big-iron.blogspot.com/2019/08/maas-kvm-on-s390x-part1.html
+https://discourse.maas.io/t/maas-virsh-power-type-power-error/7913/2
+sudo snap refresh --channel=3.3/stable/hotfix-bug-2053033 maas
 ```
 
 
