@@ -53,7 +53,15 @@ sudo maas createadmin
 
 ---
 
-### Install with APT:
+### Install with APT for ubuntu 22.04.4
+
+### Repo address
+```
+deb https://ppa.launchpadcontent.net/maas/3.4-next/ubuntu jammy main 
+deb-src https://ppa.launchpadcontent.net/maas/3.4-next/ubuntu jammy main 
+
+```
+
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y
