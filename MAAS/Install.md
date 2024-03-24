@@ -78,7 +78,7 @@ sudo maas init
 
 ### KVM
 
-### Power parameters for KVM in MaaS CLI 
+### Bug Fix for Power parameters for KVM in MaaS CLI 
 
 ```
 https://maas.cloud.cbh.kth.se/MAAS/docs/cli/power-management-reference.html
