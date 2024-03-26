@@ -21,22 +21,19 @@ kubectl get nodes
 kubectl get ns
 ```
 
----------POD----------------json or yaml-------------
-Resource POD
+### Create PODs with yaml
 
-Object manifest
+- Resource POD
 
-apiVersion: v1
-kind : pod
+- Object manifest
 
+### Example:
+```bash
 kubectl api-resources
-
 kubectl explain pods
-
-
 kubectl explain pods.metadata
-
--------------------------------------------------------
+```
+```bash
 touch pod.yaml
 nano pod.yaml
 
@@ -54,7 +51,7 @@ spec:
   containers:
     - name: nginx
       image: nginx:alpine
-
+```
 
 ------------------------------------------------
 
