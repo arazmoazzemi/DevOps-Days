@@ -70,15 +70,23 @@ kubectl delete pod test
 kubectl get pod
 ```
 
----Replica set-for-self yeling-desire state-scaling---------------------------------------------
+**ReplicaSet Definition:**
 
+- **Set of identical Pods**: A ReplicaSet manages multiple instances (replicas) of a Pod template.
+
+- **Desired state**: ReplicaSet maintains a specified number of replicas, ensuring they match the desired state defined by the user.
+
+- **Self-healing**: If a Pod fails or terminates unexpectedly, ReplicaSet replaces it automatically to maintain the desired number of replicas.
+
+- **Scalability**: ReplicaSet allows scaling the number of replicas up or down dynamically to accommodate changes in workload demand.
+
+```bash
 kubectl api-resources | grep replicaset
-
 kubectl explain replicaset
-
+```
+```bash
 
 touch rs.yaml
-
 nano rs.yaml
 
 apiVersion: apps/v1
@@ -103,16 +111,14 @@ spec:
       containers:
         - name: nginx
           image: nginx:alpine
-
-------------------------------------------------
+```
+```bash
 kubectl apply -f rs.yaml
-
 kubectl get rs
-
 
 kubectl get pods
 kubectl get pods -o wide
-
+```
 
 ---------------------------------------------------
 
