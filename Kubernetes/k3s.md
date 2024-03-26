@@ -137,6 +137,158 @@ kubectl scale replicaset test --replicas 10
 kubectl get pods -o wide
 ```
 
+```bash
+nano rs.yaml
+
+kind: ReplicaSet
+metadata:
+  name: test
+  namespace: default
+  labels:
+    app.kubernetes.io/name: test
+    app.kubernetes.io/env: development
+    app.kubernetes.io/project: test
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: test
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: test
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.17
+```
+```bash
+kubectl apply -f rs.yaml
+kubectl get pods -o wide
+```
+
+### Check nginx version into kubernetes container
+
+```bash
+kubectl exec test-qnw4n -- nginx -v
+```
+
+### Example of upgrade nginx-1.17 to nginx-1.18:
+### Deployment
+
+
+```bash
+
+nano rs.yaml
+
+kind: ReplicaSet
+metadata:
+  name: test
+  namespace: default
+  labels:
+    app.kubernetes.io/name: test
+    app.kubernetes.io/env: development
+    app.kubernetes.io/project: test
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: test
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: test
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.18
+
+```bash
+kubectl apply -f rs.yaml
+kubectl describe rs test
+
+```
+### Example of upgrade nginx-1.17 to nginx-1.18:
+
+touch deploy.yaml
+nano deploy.yaml 
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  namespace: default
+  labels:
+    app.kubernetes.io/name: test
+    app.kubernetes.io/env: production    
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: test
+      app.kubernetes.io/env: production
+  template:
+    metadata:
+      labels:
+         app.kubernetes.io/name: test
+         app.kubernetes.io/env: production
+    spec:
+      containers:
+        - name: nginx
+
+          image: nginx:1.17
+
+```basg
+kubectl delete rs test
+kubectl apply -f deploy.yaml
+```
+```
+kubectl get pods -o wide
+kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
+```
+
+### After deployment you should be update tmplate section to 1.18 nginx version:
+
+```nano deploy.yaml 
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  namespace: default
+  labels:
+    app.kubernetes.io/name: test
+    app.kubernetes.io/env: production    
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: test
+      app.kubernetes.io/env: production
+  template:
+    metadata:
+      labels:
+         app.kubernetes.io/name: test
+         app.kubernetes.io/env: production
+    spec:
+      containers:
+        - name: nginx
+
+          image: nginx:1.17
+
+```
+
+#### Check nginx version
+```
+kubectl apply -f deploy.yaml
+kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
+```
+
+
+
+
+
+
 
 
 
