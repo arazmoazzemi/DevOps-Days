@@ -1,4 +1,4 @@
-https://k3s.io/
+[ks3 link](https://k3s.io/)
 
 curl -sfL https://get.k3s.io | sh - 
 # Check for Ready node, takes ~30 seconds 
