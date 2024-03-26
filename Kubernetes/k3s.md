@@ -1,17 +1,20 @@
 [ks3 link](https://k3s.io/)
 
+```bash
 curl -sfL https://get.k3s.io | sh - 
 # Check for Ready node, takes ~30 seconds 
-sudo k3s kubectl get node 
---------------
+sudo k3s kubectl get node
+```
+```bash
 kubectl completion bash > /etc/bash_completion.d/kubectl
 logout
-----------------------
+```
+```bash
 cat /etc/rancher/k3s/k3s.yaml
--------------------------
+
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 kubectl get nodes 
-
+```
 
 ------------name space-----------------------
 kubectl get ns
