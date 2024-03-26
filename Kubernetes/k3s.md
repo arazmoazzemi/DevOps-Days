@@ -131,8 +131,11 @@ kubectl delete pod test-dgr44
 kubectl delete pods --all
 ```
 
-
-
+### Scaling:
+```bash
+kubectl scale replicaset test --replicas 10
+kubectl get pods -o wide
+```
 
 
 
