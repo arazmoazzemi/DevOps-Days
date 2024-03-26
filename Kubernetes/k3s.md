@@ -120,20 +120,16 @@ kubectl get pods
 kubectl get pods -o wide
 ```
 
----------------------------------------------------
-
+### Test a replicaset cluster
+```bash
 ssh to node and watch kubernets services
-
 watch -n0.1 kubectl get pods -o wide
-
-----------------------------------------------------
-For test:
-
+```
+### For test:
+```bash
 kubectl delete pod test-dgr44
-
 kubectl delete pods --all
-
--------------------------------------------------------
+```
 
 
 
