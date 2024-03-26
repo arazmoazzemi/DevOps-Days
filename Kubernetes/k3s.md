@@ -16,9 +16,10 @@ export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 kubectl get nodes 
 ```
 
-------------name space-----------------------
+### Get name space
+```bash
 kubectl get ns
-
+```
 
 ---------POD----------------json or yaml-------------
 Resource POD
