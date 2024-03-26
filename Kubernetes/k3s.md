@@ -53,22 +53,22 @@ spec:
       image: nginx:alpine
 ```
 
-------------------------------------------------
-
+```bash
 kubectl apply -f pod.yaml
 
 kubectl get pod
 kubectl get pod -o wide
 
 kubectl get nodes -o wide
---------------------------------------------------------------
-
+```
+```bash
 curl 10.42.0.9
+```
 
-------------------------------------------------------------
-
+```
 kubectl delete pod test
 kubectl get pod
+```
 
 ---Replica set-for-self yeling-desire state-scaling---------------------------------------------
 
