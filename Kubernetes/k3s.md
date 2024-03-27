@@ -202,17 +202,17 @@ spec:
       containers:
         - name: nginx
           image: nginx:1.18
+```
 
 ```bash
 kubectl apply -f rs.yaml
 kubectl describe rs test
-
 ```
 
 ### Deployment resource for rollbask and upgrade:
 ### Example of upgrade nginx-1.17 to nginx-1.18:
-```bash
 
+```bash
 touch deploy.yaml
 nano deploy.yaml 
 
@@ -246,6 +246,7 @@ spec:
 kubectl delete rs test
 kubectl apply -f deploy.yaml
 ```
+
 ```bash
 kubectl get pods -o wide
 kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
@@ -253,7 +254,8 @@ kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
 
 ### After deployment you should be update tmplate section to 1.18 nginx version:
 
-```nano deploy.yaml 
+```bash
+nano deploy.yaml 
 
 apiVersion: apps/v1
 kind: Deployment
@@ -279,11 +281,11 @@ spec:
         - name: nginx
 
           image: nginx:1.17
-
 ```
 
 #### Check nginx version
-```
+
+```bash
 kubectl apply -f deploy.yaml
 kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
 ```
