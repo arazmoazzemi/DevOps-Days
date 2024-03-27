@@ -1,4 +1,4 @@
-[ks3 link](https://k3s.io/)
+[ks3 website address](https://k3s.io/)
 
 ```bash
 curl -sfL https://get.k3s.io | sh - 
