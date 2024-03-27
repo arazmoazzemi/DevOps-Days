@@ -208,7 +208,10 @@ kubectl apply -f rs.yaml
 kubectl describe rs test
 
 ```
+
+### Deployment resource for rollbask and upgrade:
 ### Example of upgrade nginx-1.17 to nginx-1.18:
+```bash
 
 touch deploy.yaml
 nano deploy.yaml 
@@ -237,12 +240,13 @@ spec:
         - name: nginx
 
           image: nginx:1.17
+```
 
-```basg
+```bash
 kubectl delete rs test
 kubectl apply -f deploy.yaml
 ```
-```
+```bash
 kubectl get pods -o wide
 kubectl exec test-7b4f9f5568-2dzh4 -- nginx -v
 ```
