@@ -35,8 +35,8 @@ kubectl explain pods.metadata
 ```
 ```bash
 touch pod.yaml
-nano pod.yaml
 
+nano pod.yaml
 
 apiVersion: v1
 kind: Pod
@@ -61,11 +61,12 @@ kubectl get pod -o wide
 
 kubectl get nodes -o wide
 ```
+
 ```bash
 curl 10.42.0.9
 ```
 
-```
+```bash
 kubectl delete pod test
 kubectl get pod
 ```
@@ -85,8 +86,8 @@ kubectl api-resources | grep replicaset
 kubectl explain replicaset
 ```
 ```bash
-
 touch rs.yaml
+
 nano rs.yaml
 
 apiVersion: apps/v1
@@ -112,6 +113,7 @@ spec:
         - name: nginx
           image: nginx:alpine
 ```
+
 ```bash
 kubectl apply -f rs.yaml
 kubectl get rs
@@ -121,17 +123,21 @@ kubectl get pods -o wide
 ```
 
 ### Test a replicaset cluster
+
 ```bash
 ssh to node and watch kubernets services
 watch -n0.1 kubectl get pods -o wide
 ```
+
 ### For test:
+
 ```bash
 kubectl delete pod test-dgr44
 kubectl delete pods --all
 ```
 
 ### Scaling:
+
 ```bash
 kubectl scale replicaset test --replicas 10
 kubectl get pods -o wide
@@ -162,6 +168,7 @@ spec:
         - name: nginx
           image: nginx:1.17
 ```
+
 ```bash
 kubectl apply -f rs.yaml
 kubectl get pods -o wide
@@ -175,7 +182,6 @@ kubectl exec test-qnw4n -- nginx -v
 
 ### Example of upgrade nginx-1.17 to nginx-1.18:
 ### Deployment
-
 
 ```bash
 
@@ -214,6 +220,7 @@ kubectl describe rs test
 
 ```bash
 touch deploy.yaml
+
 nano deploy.yaml 
 
 apiVersion: apps/v1
