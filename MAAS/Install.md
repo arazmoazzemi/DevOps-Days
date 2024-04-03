@@ -72,6 +72,8 @@ sudo apt install maas -y
 
 sudo maas init
 
+http://172.16.100.2:5240/
+
 ```
 
 ---
