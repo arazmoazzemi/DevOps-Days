@@ -166,23 +166,17 @@ sudo mkdir -p /var/snap/maas/current/root/.ssh
 cd /var/snap/maas/current/root/.ssh
 sudo ssh-keygen -f id_rsa
 
-
-
 nano /etc/libvirt/libvirtd.conf
-
 
 unix_sock_group = "libvirt"
 unix_sock_rw_perms = "0770"
 auth_unix_rw = "none"
-
 
 sudo nano /etc/libvirt/qemu.conf
 user = "oneadmin"
 group = "kvm"
 
 sudo systemctl restart libvirtd
-
-
 
 
 sudo -H -u maas \
@@ -228,7 +222,7 @@ group = "kvm"
 
 ----
 
-# OK -------------------->>> YOU just bug fix
+### It's OK, You just bug fix:
 ```
 [[Set up libvirt SSH (3.3,3.4 snap)
 
@@ -237,17 +231,10 @@ cd /var/snap/maas/current/root/.ssh
 sudo ssh-keygen -f id_rsa
 sudo cat /var/snap/maas/current/root/.ssh/id_rsa.pub | tee -a ~/.ssh/authorized_keys
 
-
-
 maas login it http://192.168.200.15:5240/MAAS/api/2.0/ cwuEJsZAbxbvMxwMxH:fYfL37gcrtEnNRNPMM:NtNWzr55ND5Ay2DdDUrM8LCvf9kW72HK
-
-
 
 ssh-copyid it@192.168.200.15
 virsh -c qemu+ssh://it@192.168.200.15/system list --all'
-
-
-
 
 
 
