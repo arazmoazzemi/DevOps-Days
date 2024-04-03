@@ -64,11 +64,11 @@ deb-src https://ppa.launchpadcontent.net/maas/3.4-next/ubuntu jammy main
 
 ### Install MAAS with apt:
 ```
-sudo apt install gnupg2
-
 sudo apt-get update && sudo apt-get upgrade -y
 
-sudo apt-add-repository ppa:maas/3.4
+sudo apt install gnupg2
+
+sudo apt-add-repository ppa:maas/3.3
 
 sudo apt install maas -y
 
